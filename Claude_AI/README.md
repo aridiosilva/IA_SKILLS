@@ -2,8 +2,6 @@
 
 [English](README.md) | [Português](README.pt.md)
 
-> Consolidated document from a study session on Claude's Agent and Skills architecture, covering: the conceptual architecture diagram, where Skills live across different product surfaces (Chrome, Excel, Claude Code), the real content of the `SKILL.md` specifications (docx, xlsx, pptx), and the automated verification scripts that guarantee output quality.
-
 ---
 
 ## Table of Contents
