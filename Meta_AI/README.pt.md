@@ -1,8 +1,6 @@
 # SKILLs para LLMs - Guia Completo
 ### O que são, como funcionam no Meta AI e como implementar geração de arquivos
 
-> Conteúdo compilado da conversa sobre SKILLs como parte do harness do modelo de IA.
-
 ---
 
 ## 1. O que é uma SKILL para LLMs
@@ -207,4 +205,4 @@ meta-ai-skills-showcase/
 Para testar, peça: "gere uma planilha xlsx", "gere um pdf", "gere um png transparente".
 
 ---
-*Gerado em 31 de agosto de 2026 - Meta AI - Conversa sobre SKILLs como hardness do modelo*
+Created August 2026
