@@ -21,7 +21,7 @@
 
 ## 1. Agent + Skills + Computer Architecture
 
-!(https://github.com/aridiosilva/IA_SKILLS/blob/main/Claude_AI/images/agent-skills-computer-diagram-no-CLAUDE-AI.png)
+![](https://github.com/aridiosilva/IA_SKILLS/blob/main/Claude_AI/images/agent-skills-computer-diagram-no-CLAUDE-AI.png)
 
 The reference diagram ("Agent + Skills + Computer") splits the architecture into two main blocks:
 
@@ -29,8 +29,6 @@ The reference diagram ("Agent + Skills + Computer") splits the architecture into
 - **Agent virtual machine** (right) — the real computing environment (a VM/sandbox) where Claude actually executes code and manipulates files.
 
 The central arrow labeled **"use computer"** is the bridge between the two: this is how the agent moves from "configuration" to actually acting in the world (running bash, Python, Node.js).
-
-![Diagram: Agent + Skills + Computer](agent-skills-computer-diagram.png)
 
 ### 1.0 Operational Flow Described in Words
 
