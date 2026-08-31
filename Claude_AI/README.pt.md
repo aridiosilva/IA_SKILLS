@@ -2,8 +2,6 @@
 
 [English](README.md) | [Português](README.pt.md)
 
-> Documento consolidado a partir de uma sessão de estudo sobre a arquitetura de Skills e Agentes de IA no Claude, cobrindo: o diagrama conceitual da arquitetura, onde as Skills vivem em diferentes superfícies do produto (Chrome, Excel, Claude Code), o conteúdo real das especificações `SKILL.md` (docx, xlsx, pptx) e os scripts de verificação automática que garantem a qualidade das saídas.
-
 ---
 
 ## Sumário
