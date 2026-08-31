@@ -1,10 +1,8 @@
-# SKILLs for LLMs - Complete Guide
+# SKILLs for LLMs Of META AI
 
 [English](README.md) | [Português](README.pt.md)
 
 ### What they are, how they work in Meta AI, and how to implement file generation
-
-> Content compiled from the conversation about SKILLs as part of the AI model's harness.
 
 ---
 
@@ -210,4 +208,4 @@ meta-ai-skills-showcase/
 To test, ask: "generate an xlsx spreadsheet", "generate a pdf", "generate a transparent png".
 
 ---
-*Generated on August 31, 2026 - Meta AI - Conversation about SKILLs as model hardness*
+Created August 2026
