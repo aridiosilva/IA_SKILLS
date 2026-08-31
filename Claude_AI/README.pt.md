@@ -1,89 +1,89 @@
-# Agent + Skills + Computer: How Claude AI Skills Work
+# Agent + Skills + Computer: Como Funcionam as Skills do Claude AI
 
 [English](README.md) | [Português](README.pt.md)
 
-> Consolidated document from a study session on Claude's Agent and Skills architecture, covering: the conceptual architecture diagram, where Skills live across different product surfaces (Chrome, Excel, Claude Code), the real content of the `SKILL.md` specifications (docx, xlsx, pptx), and the automated verification scripts that guarantee output quality.
+> Documento consolidado a partir de uma sessão de estudo sobre a arquitetura de Skills e Agentes de IA no Claude, cobrindo: o diagrama conceitual da arquitetura, onde as Skills vivem em diferentes superfícies do produto (Chrome, Excel, Claude Code), o conteúdo real das especificações `SKILL.md` (docx, xlsx, pptx) e os scripts de verificação automática que garantem a qualidade das saídas.
 
 ---
 
-## Table of Contents
+## Sumário
 
-1. [Agent + Skills + Computer Architecture](#1-agent--skills--computer-architecture)
-2. [Where SKILL.md Files Live: Chrome vs. Excel vs. Claude Code](#2-where-skillmd-files-live-chrome-vs-excel-vs-claude-code)
-3. [The SKILL.md Specification — General Anatomy](#3-the-skillmd-specification--general-anatomy)
-4. [Full Content: `docx` Skill](#4-docx-skill)
-5. [Full Content: `xlsx` Skill](#5-xlsx-skill)
-6. [Full Content: `pptx` Skill](#6-pptx-skill)
-7. [Mandatory Verification Scripts](#7-mandatory-verification-scripts)
-8. [Synthesis: Design Patterns That Run Through Everything](#8-synthesis-design-patterns-that-run-through-everything)
+1. [Arquitetura Agent + Skills + Computer](#1-arquitetura-agent--skills--computer)
+2. [Onde ficam os SKILL.md: Chrome vs. Excel vs. Claude Code](#2-onde-ficam-os-skillmd-chrome-vs-excel-vs-claude-code)
+3. [Especificação do SKILL.md — anatomia geral](#3-especificação-do-skillmd--anatomia-geral)
+4. [Conteúdo completo: Skill `docx`](#4-skill-docx)
+5. [Conteúdo completo: Skill `xlsx`](#5-skill-xlsx)
+6. [Conteúdo completo: Skill `pptx`](#6-skill-pptx)
+7. [Scripts de verificação obrigatória](#7-scripts-de-verificação-obrigatória)
+8. [Síntese: padrões de design que atravessam tudo](#8-síntese-padrões-de-design-que-atravessam-tudo)
 
 ---
 
-## 1. Agent + Skills + Computer Architecture
+## 1. Arquitetura Agent + Skills + Computer
 
 []()
 
-The reference diagram ("Agent + Skills + Computer") splits the architecture into two main blocks:
+O diagrama de referência ("Agent + Skills + Computer") divide a arquitetura em dois blocos principais:
 
-- **Agent configuration** (left) — what's "inside Claude's head": the system prompt, equipped Skills, and connected MCP servers.
-- **Agent virtual machine** (right) — the real computing environment (a VM/sandbox) where Claude actually executes code and manipulates files.
+- **Agent configuration** (esquerda) — o que está "dentro da cabeça" do Claude: o prompt de sistema, as Skills equipadas e os servidores MCP conectados.
+- **Agent virtual machine** (direita) — o ambiente computacional real (uma VM/sandbox) onde o Claude efetivamente executa código e manipula arquivos.
 
-The central arrow labeled **"use computer"** is the bridge between the two: this is how the agent moves from "configuration" to actually acting in the world (running bash, Python, Node.js).
+A seta central rotulada **"use computer"** é a ponte entre os dois: é assim que o agente sai da "configuração" e efetivamente age no mundo (rodando bash, Python, Node.js).
 
-![Diagram: Agent + Skills + Computer](agent-skills-computer-diagram.png)
+![Diagrama: Agent + Skills + Computer](agent-skills-computer-diagram.png)
 
-### 1.0 Operational Flow Described in Words
+### 1.0 Fluxo de funcionamento descrito em palavras
 
-The image above is not a strict "step 1, step 2, step 3" flowchart — it's a **static architecture diagram**, showing where each piece lives and how it connects to the others. But it's possible to narrate the operational flow it implies, in the order it actually happens in practice:
+A imagem acima não é um fluxograma de "passo 1, passo 2, passo 3" no sentido estrito — é um diagrama de **arquitetura estática**, mostrando onde cada peça mora e como se conecta às demais. Mas dá para narrar o fluxo de funcionamento que ela implica, na ordem em que ele acontece na prática:
 
-**Step 1 — Preparation (before any user task).**
-When an agent session begins, the **Core system prompt** is loaded first — it's the baseline of Claude's behavior. Along with it, the metadata (name + `description`) of each **Equipped Skill** is pre-loaded into that same system prompt. No full skill content is read yet — just enough for the agent to know those capabilities exist and when each applies. In parallel, the configured **Equipped MCP servers** are also available as ready connections, but not yet used.
+**Etapa 1 — Preparação (antes de qualquer tarefa do usuário).**
+Quando uma sessão do agente começa, o **Core system prompt** é carregado primeiro — é a base de comportamento do Claude. Junto com ele, os metadados (nome + `description`) de cada uma das **Equipped Skills** são pré-carregados no mesmo prompt de sistema. Nenhum conteúdo completo de skill é lido ainda — só o suficiente para o agente saber que aquelas capacidades existem e quando cada uma se aplica. Em paralelo, os **Equipped MCP servers** configurados também ficam disponíveis como conexões prontas, mas ainda não usadas.
 
-**Step 2 — The user makes a request.**
-The agent interprets the task and decides, based on the pre-loaded `description`s, whether some Skill fits. If so, it reads that skill's full `SKILL.md` — this is the second-level "activation" of progressive disclosure.
+**Etapa 2 — O usuário faz um pedido.**
+O agente interpreta a tarefa e decide, com base nas `description`s pré-carregadas, se alguma Skill se encaixa. Se sim, ele lê o `SKILL.md` completo daquela skill — isso é a "ativação" de segundo nível de divulgação progressiva.
 
-**Step 3 — The skill instructs an action on the computer.**
-This is where the central **"use computer"** arrow comes into play: to carry out what the `SKILL.md` recommends (running a script, writing a file, calling a library), the agent crosses the boundary between "configuration" (where only instructions existed) and the **Agent virtual machine** (where things actually happen) — the VM with Bash, Python, and Node.js.
+**Etapa 3 — A skill instrui uma ação no computador.**
+É aqui que a seta central **"use computer"** entra em cena: para executar o que o `SKILL.md` recomenda (rodar um script, escrever um arquivo, chamar uma biblioteca), o agente atravessa a fronteira entre a "configuração" (onde só existiam instruções) e a **Agent virtual machine** (onde as coisas de fato acontecem) — a VM com Bash, Python e Node.js.
 
-**Step 4 — The skill's files are already there, waiting.**
-The diagram's green box ("Contents of Skill directories live in the agent computer's file system") documents a precondition, not a step in itself: the content of each equipped Skill (the `SKILL.md` and all supporting files — reference `.md` files, `.py` scripts) has already been materialized as real folders inside the VM's file system, even before the task begins. That's why, when the agent decides "I'll use the `pdf` skill," it doesn't need to download anything — it simply navigates to `skills/pdf/` with the same commands it would use for any other folder, and executes what it finds there (for example, `extract_fields.py`).
+**Etapa 4 — Os arquivos da skill já estão lá, esperando.**
+A caixa verde do diagrama ("Contents of Skill directories live in the agent computer's file system") documenta uma pré-condição, não uma etapa em si: o conteúdo de cada Skill equipada (o `SKILL.md` e todos os arquivos auxiliares — `.md` de referência, scripts `.py`) já foi materializado como pastas reais dentro do sistema de arquivos da VM, antes mesmo de a tarefa começar. Por isso, quando o agente decide "vou usar a skill `pdf`", ele não precisa baixar nada — ele simplesmente navega até `skills/pdf/` com os mesmos comandos que usaria para qualquer outra pasta, e executa o que encontra lá (por exemplo, `extract_fields.py`).
 
-**Step 5 — If the task requires external data or tools.**
-If the skill alone isn't enough — for example, if querying a database or a third-party API is required — the agent falls back on the configured **MCP servers**, which in turn connect to **Remote MCP servers** on the internet (shown in the lower-left of the diagram). This is a parallel, independent path from the Skills path: MCP brings in outside data/tools; Skills bring the know-how for using all of that correctly.
+**Etapa 5 — Se a tarefa exigir dados ou ferramentas externas.**
+Caso a skill sozinha não seja suficiente — por exemplo, se for necessário consultar um banco de dados ou uma API de terceiros — o agente recorre aos **MCP servers** configurados, que por sua vez se conectam aos **Remote MCP servers** na internet (mostrados na parte inferior esquerda do diagrama). Essa é uma via paralela e independente da via das Skills: MCP traz dados/ferramentas de fora; Skills trazem know-how de como usar tudo isso corretamente.
 
-**Step 6 — Execution and return.**
-The result of the action executed in the VM (a file created, data queried, code run) flows back into the agent's conversation, which then replies to the user — closing the loop until the next request.
+**Etapa 6 — Execução e retorno.**
+O resultado da ação executada na VM (arquivo criado, dado consultado, código rodado) volta para o fluxo de conversa do agente, que então responde ao usuário — encerrando o ciclo até o próximo pedido.
 
-In summary, the flow is: **load lightweight metadata → identify the right skill by its `description` → load the full instructions → cross into the VM via "use computer" → execute using the skill's files already present in the file system → optionally extend the action with MCP for external data/tools → return the result.**
+Em resumo, o fluxo é: **carregar metadados leves → identificar a skill certa pela `description` → carregar as instruções completas → atravessar para a VM via "use computer" → executar usando os arquivos da skill já presentes no sistema de arquivos → opcionalmente estender a ação com MCP para dados/ferramentas externas → devolver o resultado.**
 
-### 1.1 Core System Prompt
+### 1.1 Core system prompt
 
-The agent's base prompt — fundamental behavioral instructions, role, and rules loaded before any task.
+O prompt-base do agente — instruções fundamentais de comportamento, papel e regras carregadas antes de qualquer tarefa.
 
 ### 1.2 Equipped Skills
 
-Available Skills (e.g., `bigquery`, `docx`, `nda-review`, `pdf`, `pptx`, `xlsx`). The central concept is **progressive disclosure**, in three levels:
+Skills disponíveis (ex.: `bigquery`, `docx`, `nda-review`, `pdf`, `pptx`, `xlsx`). O conceito central é a **divulgação progressiva (progressive disclosure)**, em três níveis:
 
-1. **Level 1 (always loaded):** just each skill's name + `description` — a few dozen tokens each, letting dozens of skills coexist without overloading the context.
-2. **Level 2 (loaded on activation):** when a task matches the `description`, the full `SKILL.md` is loaded — detailed procedural instructions.
-3. **Level 3 (loaded on demand):** additional reference files within the skill (`FORMS.md`, `REFERENCE.md`), read only if the specific task requires them.
+1. **Nível 1 (sempre carregado):** apenas nome + `description` de cada skill — poucas dezenas de tokens cada, permitindo dezenas de skills coexistirem sem estourar o contexto.
+2. **Nível 2 (carregado ao ativar):** quando uma tarefa bate com a `description`, o `SKILL.md` completo é carregado — instruções procedurais detalhadas.
+3. **Nível 3 (carregado sob demanda):** arquivos de referência adicionais dentro da skill (`FORMS.md`, `REFERENCE.md`), lidos apenas se a tarefa específica exigir.
 
-### 1.3 Equipped MCP Servers
+### 1.3 Equipped MCP servers
 
-MCP (**Model Context Protocol**) connects the agent to external tools and data sources — databases, APIs, third-party services — pointing to **remote MCP servers** on the internet.
+MCP (**Model Context Protocol**) conecta o agente a ferramentas e fontes de dados externas — bancos de dados, APIs, serviços de terceiros — apontando para **servidores MCP remotos** na internet.
 
-| Dimension | Skills | MCP |
+| Dimensão | Skills | MCP |
 |---|---|---|
-| Primary role | Procedural knowledge (how to do it) | Tool connectivity (what to do it with) |
-| Unit | Folder with `SKILL.md` | Server with endpoints |
-| Where it lives | Agent's file system | Session/client configuration |
-| Persistence | File-based | Session-based |
+| Papel principal | Conhecimento procedural (como fazer) | Conectividade com ferramentas (com o quê fazer) |
+| Unidade | Pasta com `SKILL.md` | Servidor com endpoints |
+| Onde vive | Sistema de arquivos do agente | Sessão/configuração de cliente |
+| Persistência | Baseada em arquivo | Baseada em sessão |
 
-**MCP provides access to external tools; Skills provide the know-how for using those tools well** (or carrying out complex tasks in general).
+**MCP dá acesso a ferramentas externas; Skills dão know-how sobre como usar bem essas ferramentas** (ou realizar tarefas complexas em geral).
 
-### 1.4 Agent Virtual Machine
+### 1.4 Agent virtual machine
 
-The "machine" where Claude actually works, with access to **Bash**, **Python**, and **Node.js**, and a real file system where each equipped Skill is materialized as a folder:
+A "máquina" onde o Claude realmente trabalha, com acesso a **Bash**, **Python** e **Node.js**, e um sistema de arquivos real onde cada Skill equipada é materializada como uma pasta:
 
 ```
 skills/bigquery/
@@ -107,86 +107,86 @@ skills/pdf/
 └── extract_fields.py
 ```
 
-Each skill can contain, besides the mandatory `SKILL.md`: **reference files** (`.md`), **executable scripts** (`.py`), and **subfolders** organizing knowledge by subtopic.
+Cada skill pode conter, além do `SKILL.md` obrigatório: **arquivos de referência** (`.md`), **scripts executáveis** (`.py`) e **subpastas** organizando conhecimento por subtópico.
 
-### 1.5 The Bridge Between the Two Worlds
+### 1.5 A ponte entre os dois mundos
 
-The key idea: Skills aren't just "abstract instructions" — they **literally exist as real files** inside the agent's VM. Claude accesses them with the same commands it would use to navigate any file system, not as something magically embedded in the model.
+A ideia-chave: as Skills não são apenas "instruções abstratas" — elas **existem literalmente como arquivos reais** dentro da VM do agente. O Claude as acessa com os mesmos comandos que usaria para navegar em qualquer sistema de arquivos, não como algo embutido magicamente no modelo.
 
-### 1.6 Why This Architecture Matters
+### 1.6 Por que essa arquitetura importa
 
-1. **Context scalability** — hundreds of skills without overloading the context window, thanks to progressive disclosure.
-2. **Separation of concerns** — Skills = procedural knowledge; MCP = connectivity; VM = execution environment.
-3. **Modularity and reuse** — Skills are versionable, shareable folders, following an emerging open standard (Agent Skills Specification).
+1. **Escalabilidade de contexto** — centenas de skills sem sobrecarregar a janela de contexto, graças à divulgação progressiva.
+2. **Separação de responsabilidades** — Skills = conhecimento processual; MCP = conectividade; VM = ambiente de execução.
+3. **Modularidade e reuso** — Skills são pastas versionáveis e compartilháveis, seguindo um padrão aberto emergente (Agent Skills Specification).
 
 ---
 
-## 2. Where SKILL.md Files Live: Chrome vs. Excel vs. Claude Code
+## 2. Onde ficam os SKILL.md: Chrome vs. Excel vs. Claude Code
 
-An important finding: **not every Claude surface uses the local on-disk `SKILL.md` architecture.** It's specific to environments with "computer" access (a VM with bash/Python/Node).
+Uma constatação importante: **nem toda superfície do Claude usa a arquitetura de `SKILL.md` local em disco.** Ela é específica de ambientes com acesso a "computador" (VM com bash/Python/Node).
 
-### 2.1 Claude for Chrome (browser extension)
+### 2.1 Claude for Chrome (extensão do navegador)
 
-**There is no `skills/` folder or local `SKILL.md` for this extension.**
+**Não há pasta `skills/` nem `SKILL.md` local para essa extensão.**
 
-- It's a Manifest V3 extension that opens as a side panel next to the active tab.
-- It uses the Anthropic SDK directly in the browser, authenticating via OAuth.
-- Instead of file-based Skills, it operates with a **"computer use"** tool (mouse/keyboard/screenshot via Chrome DevTools Protocol): the model "sees" the screen via screenshot, decides an action, the extension executes it, takes a new screenshot, and repeats the loop.
-- No skills file system is exposed locally.
+- É uma extensão Manifest V3 que abre como painel lateral ao lado da aba ativa.
+- Usa o SDK da Anthropic diretamente no navegador, autenticando via OAuth.
+- Em vez de Skills em arquivo, opera com uma ferramenta de **"computer use"** (mouse/teclado/screenshot via Chrome DevTools Protocol): o modelo "vê" a tela via screenshot, decide uma ação, a extensão executa, tira novo screenshot, repete o loop.
+- Não existe filesystem de skills exposto localmente.
 
-📁 **On Windows:** the only local artifact is the extension package itself, installed by Chrome (`...\User Data\Default\Extensions\<id>\`), containing only the extension's source code (JS/HTML) — not Skills in the sense of the diagram.
+📁 **No Windows:** o único artefato local é o próprio pacote da extensão instalado pelo Chrome (`...\User Data\Default\Extensions\<id>\`), contendo apenas código-fonte da extensão (JS/HTML) — não Skills no sentido do diagrama.
 
-### 2.2 Claude for Excel (Office 365 add-in)
+### 2.2 Claude for Excel (add-in do Office 365)
 
-Here, Skills **exist and are applied automatically**, but still **not as loose files on the Windows disk**:
+Aqui as Skills **existem e são aplicadas automaticamente**, mas ainda **não como arquivos soltos no disco Windows**:
 
-> "Skills you've enabled in your Claude settings are also available in the Claude for Excel, PowerPoint, Word, and Outlook add-ins. Claude applies relevant skills automatically while you work." — official documentation
+> "As Skills habilitadas nas configurações da sua conta Claude também ficam disponíveis nos add-ins do Excel, PowerPoint, Word e Outlook. O Claude aplica as skills relevantes automaticamente enquanto você trabalha." — documentação oficial
 
-- The add-in is a *task pane* (web interface) running inside Excel, communicating with Anthropic's servers in the cloud.
-- Enabled Skills are managed **in the claude.ai account**, under **Customize → Skills** — not in a local folder.
-- Typing `/` in the sidebar lists the available Skills (coming from the cloud); the `SKILL.md` content "runs" server-side, not on `C:\`.
+- O add-in é um *task pane* (interface web) rodando dentro do Excel, comunicando-se com os servidores da Anthropic na nuvem.
+- As Skills habilitadas ficam gerenciadas **na conta claude.ai**, em **Customize → Skills** — não em pasta local.
+- Digitar `/` na barra lateral lista as Skills disponíveis (vindas da nuvem); o conteúdo do `SKILL.md` "roda" do lado do servidor, não no `C:\`.
 
-📁 **On Windows:** there is no local `SKILL.md` for the Excel add-in — only the Office add-in manifest installed via AppSource, unrelated to the content of the Skills.
+📁 **No Windows:** não há `SKILL.md` local para o add-in do Excel — apenas o manifesto do add-in do Office instalado via AppSource, sem relação com o conteúdo das Skills.
 
-### 2.3 Claude Code / Desktop (where local `SKILL.md` actually exists)
+### 2.3 Claude Code / Desktop (onde o `SKILL.md` local de fato existe)
 
 ```
-C:\Users\<your_username>\.claude\skills\        ← Personal skills (global, all projects)
-<project_folder>\.claude\skills\                 ← Project-specific skills
+C:\Users\<seu_usuário>\.claude\skills\          ← Skills pessoais (globais, todos os projetos)
+<pasta_do_projeto>\.claude\skills\               ← Skills específicas de um projeto
 ```
 
-Each skill in its own subfolder, with `SKILL.md` at the root:
+Cada skill em sua própria subpasta, com `SKILL.md` na raiz:
 
 ```
 C:\Users\aridio\.claude\skills\
-├── my-skill\
+├── minha-skill\
 │   └── SKILL.md
-└── another-skill\
+└── outra-skill\
     ├── SKILL.md
     └── scripts\
 ```
 
-### 2.4 Comparison Summary
+### 2.4 Resumo comparativo
 
-| Surface | Local skills on disk? | Where they actually live |
+| Superfície | Skills locais em disco? | Onde ficam de fato |
 |---|---|---|
-| **Claude for Chrome** | No | Doesn't use Skills in the diagram's sense; uses pure computer-use |
-| **Claude for Excel (add-in)** | No | Managed in the cloud, via claude.ai → Customize → Skills |
-| **Claude Code / Desktop (Code)** | **Yes** | `C:\Users\<username>\.claude\skills\` |
+| **Claude for Chrome** | Não | Não usa Skills no sentido do diagrama; usa computer-use puro |
+| **Claude for Excel (add-in)** | Não | Gerenciadas na nuvem, via claude.ai → Customize → Skills |
+| **Claude Code / Desktop (Code)** | **Sim** | `C:\Users\<usuário>\.claude\skills\` |
 
 ---
 
-## 3. The SKILL.md Specification — General Anatomy
+## 3. Especificação do SKILL.md — anatomia geral
 
-Standard structure of a skill (real example: the `pdf` skill, equipped in the execution environment):
+Estrutura padrão de uma skill (exemplo real: skill `pdf`, equipada no ambiente de execução):
 
 ```
 /mnt/skills/public/pdf/
-├── SKILL.md                          ← required, entry point
-├── FORMS.md                          ← reference, loaded on demand
-├── REFERENCE.md                      ← reference, loaded on demand
-├── LICENSE.txt                       ← license terms
-└── scripts/                          ← executable code
+├── SKILL.md                          ← obrigatório, ponto de entrada
+├── FORMS.md                          ← referência sob demanda
+├── REFERENCE.md                      ← referência sob demanda
+├── LICENSE.txt                       ← termos de licença
+└── scripts/                          ← código executável
     ├── check_bounding_boxes.py
     ├── check_fillable_fields.py
     ├── convert_pdf_to_images.py
@@ -196,7 +196,7 @@ Standard structure of a skill (real example: the `pdf` skill, equipped in the ex
     └── fill_pdf_form_with_annotations.py
 ```
 
-### 3.1 YAML Frontmatter Fields
+### 3.1 Campos do YAML frontmatter
 
 ```yaml
 ---
@@ -206,27 +206,27 @@ license: Proprietary. LICENSE.txt has complete terms
 ---
 ```
 
-| Field | Function |
+| Campo | Função |
 |---|---|
-| `name` | Unique skill identifier (lowercase, hyphens, ≤64 characters) |
-| `description` | **The most critical field.** The only text pre-loaded in context at all times, used to decide whether the skill applies to the task. Written as an activation rule ("Use this skill whenever...", "If the user mentions...") |
-| `license` | Optional — usage terms for the skill's content |
+| `name` | Identificador único da skill (minúsculas, hífens, ≤64 caracteres) |
+| `description` | **O mais crítico.** Único texto pré-carregado no contexto o tempo todo, usado para decidir se a skill se aplica à tarefa. Escrita como regra de ativação ("Use this skill whenever...", "If the user mentions...") |
+| `license` | Opcional — termos de uso do conteúdo da skill |
 
-### 3.2 SKILL.md Body
+### 3.2 Corpo do SKILL.md
 
-Follows a common pragmatic pattern: **Quick Start** → specific libraries/tools with ready-made snippets → concrete operational warnings ("gotchas") → references to the next level of detail (`REFERENCE.md`, `FORMS.md`).
+Segue um padrão pragmático comum: **Quick Start** → bibliotecas/ferramentas específicas com snippets prontos → avisos operacionais concretos ("gotchas") → referências ao próximo nível de detalhe (`REFERENCE.md`, `FORMS.md`).
 
-### 3.3 The `scripts/` Folder
+### 3.3 A pasta `scripts/`
 
-When a skill packages **ready-made Python/JS code** instead of just instructing, the agent runs the already-tested script via bash instead of generating code from scratch every time — reducing variance and error surface. From a GRC standpoint, the provenance and integrity of these scripts matter just as much as any third-party dependency in a software pipeline.
+Quando a skill empacota **código Python/JS pronto** em vez de apenas instruir, o agente executa o script já testado via bash em vez de gerar código do zero a cada vez — reduzindo variância e superfície de erro. Do ponto de vista de GRC, a proveniência e integridade desses scripts importa tanto quanto qualquer dependência de terceiros em um pipeline de software.
 
 ---
 
-## 4. `docx` Skill
+## 4. Skill `docx`
 
-**Path:** `/mnt/skills/public/docx/SKILL.md` · **Size:** ~7K
+**Caminho:** `/mnt/skills/public/docx/SKILL.md` · **Tamanho:** ~7K
 
-### Directory Structure
+### Estrutura de diretório
 
 ```
 docx/
@@ -236,10 +236,10 @@ docx/
     ├── accept_changes.py
     ├── comment.py
     ├── merge_runs.py
-    └── office/ (1.1M — bundled LibreOffice)
+    └── office/ (1.1M — LibreOffice empacotado)
 ```
 
-### Full Content
+### Conteúdo completo
 
 ```yaml
 ---
@@ -337,11 +337,11 @@ The script writes `comments.xml`, `commentsExtended.xml`, `commentsIds.xml`, `co
 
 ---
 
-## 5. `xlsx` Skill
+## 5. Skill `xlsx`
 
-**Path:** `/mnt/skills/public/xlsx/SKILL.md` · **Size:** ~8.5K
+**Caminho:** `/mnt/skills/public/xlsx/SKILL.md` · **Tamanho:** ~8.5K
 
-### Directory Structure
+### Estrutura de diretório
 
 ```
 xlsx/
@@ -349,10 +349,10 @@ xlsx/
 ├── LICENSE.txt
 └── scripts/
     ├── recalc.py
-    └── office/ (1.1M — bundled LibreOffice)
+    └── office/ (1.1M — LibreOffice empacotado)
 ```
 
-### Full Content
+### Conteúdo completo
 
 ```yaml
 ---
@@ -458,11 +458,11 @@ lone edited cell mid-row is the commonest silent error · guard denominators tha
 
 ---
 
-## 6. `pptx` Skill
+## 6. Skill `pptx`
 
-**Path:** `/mnt/skills/public/pptx/SKILL.md` · **Size:** ~22K (the largest of the three)
+**Caminho:** `/mnt/skills/public/pptx/SKILL.md` · **Tamanho:** ~22K (a mais extensa das três)
 
-### Directory Structure
+### Estrutura de diretório
 
 ```
 pptx/
@@ -472,10 +472,10 @@ pptx/
     ├── add_slide.py
     ├── clean.py
     ├── thumbnail.py
-    └── office/ (1.1M — LibreOffice + validators)
+    └── office/ (1.1M — LibreOffice + validadores)
 ```
 
-### Full Content
+### Conteúdo completo
 
 ```yaml
 ---
@@ -723,26 +723,26 @@ ls -1 "$PWD"/slide-*.jpg
 
 ---
 
-## 7. Mandatory Verification Scripts
+## 7. Scripts de verificação obrigatória
 
-Two scripts that act as **mandatory** quality control, always run after file creation/editing, before any deliverable is considered complete.
+Dois scripts que atuam como controle de qualidade **obrigatório**, rodados sempre após criação/edição de arquivos, antes de qualquer entrega ser considerada concluída.
 
-### 7.1 `recalc.py` — Recalculates Excel Formulas and Checks for Errors
+### 7.1 `recalc.py` — recalcula fórmulas do Excel e verifica erros
 
-**Path:** `/mnt/skills/public/xlsx/scripts/recalc.py`
-**Why it exists:** `openpyxl` writes formulas as plain text, without computing the result. Until someone recalculates, every formula cell "reads" as empty (`None`).
+**Caminho:** `/mnt/skills/public/xlsx/scripts/recalc.py`
+**Por quê existe:** o `openpyxl` grava fórmulas como texto puro, sem calcular o resultado. Até alguém recalcular, toda célula com fórmula "lê" como vazia (`None`).
 
-**Step by step:**
+**Passo a passo:**
 
-1. Checks that the file exists and is writable.
-2. **Data-loss safety check:** scans the workbook for formulas pointing to another external file whose cached value has already been lost — if found, it **refuses to recalculate** (only proceeds with `--force`).
-3. Creates a temporary, isolated LibreOffice profile, injecting a minimal Basic macro (`calculateAll()` + `store()` + `close()`).
-4. Runs LibreOffice in headless mode via that macro, with a timeout and an external watchdog (`timeout`/`gtimeout`).
-5. Confirms the file actually changed (compares timestamp/size) — a "clean exit with no change" also counts as a failure.
-6. Reopens the file and scans for the 7 classic Excel errors: `#VALUE!`, `#DIV/0!`, `#REF!`, `#NAME?`, `#NULL!`, `#NUM!`, `#N/A`.
-7. Returns a structured JSON with `status`, `total_errors`, `total_formulas`, `error_summary`.
+1. Verifica se o arquivo existe e é gravável.
+2. **Checagem de segurança contra perda de dados:** varre o workbook procurando fórmulas que apontam para outro arquivo externo com valor em cache já perdido — se encontrar, **recusa recalcular** (só prossegue com `--force`).
+3. Cria um perfil temporário e isolado do LibreOffice, injetando uma macro Basic mínima (`calculateAll()` + `store()` + `close()`).
+4. Executa o LibreOffice em modo headless via essa macro, com timeout e watchdog externo (`timeout`/`gtimeout`).
+5. Confirma que o arquivo realmente mudou (compara timestamp/tamanho) — "saída limpa sem mudança" também é falha.
+6. Reabre o arquivo e varre por 7 erros clássicos do Excel: `#VALUE!`, `#DIV/0!`, `#REF!`, `#NAME?`, `#NULL!`, `#NUM!`, `#N/A`.
+7. Devolve JSON estruturado com `status`, `total_errors`, `total_formulas`, `error_summary`.
 
-**Full code:**
+**Código completo:**
 
 ```python
 """
@@ -1077,22 +1077,22 @@ if __name__ == "__main__":
     main()
 ```
 
-### 7.2 `validate.py` — Validates docx/pptx XML Structure Against the Official Schema
+### 7.2 `validate.py` — valida a estrutura XML de docx/pptx contra o schema oficial
 
-**Path:** `/mnt/skills/public/pptx/scripts/office/validate.py` (module shared with the `docx` skill)
-**Why it exists:** tools like `python-pptx`, LibreOffice, or even Word/PowerPoint themselves sometimes open a malformed file without complaint — but the real format (ISO/IEC 29500) is stricter. "Opens" is not the same as "structurally correct."
+**Caminho:** `/mnt/skills/public/pptx/scripts/office/validate.py` (módulo compartilhado com a skill `docx`)
+**Por quê existe:** ferramentas como `python-pptx`, LibreOffice ou até o Word/PowerPoint às vezes abrem um arquivo malformado sem reclamar — mas o formato real (ISO/IEC 29500) é mais estrito. "Abre" não é o mesmo que "estruturalmente correto".
 
-**Step by step:**
+**Passo a passo:**
 
-1. Accepts either a packed file (`.docx`/`.pptx`) or an already-unpacked directory.
-2. Detects the file family and picks the right validator (`DOCXSchemaValidator`, `PPTXSchemaValidator`); for `xlsx`, it refuses to validate and redirects to `recalc.py`.
-3. Validates against the official XSD schemas (ISO/IEC 29500).
-4. **`--original` mode:** uses the original/template file as a baseline, so a problem inherited from the template isn't flagged as "your error."
-5. **Tracked-changes check** (`--author`, docx only): verifies whether every text difference is properly marked with `<w:ins>`/`<w:del>`.
-6. **`--auto-repair` mode:** automatically fixes common issues (out-of-range IDs, missing `xml:space="preserve"`) and repacks the file.
-7. Exit code: `0` (everything passed), `1` (failed), `2` (usage error).
+1. Aceita arquivo empacotado (`.docx`/`.pptx`) ou diretório já descompactado.
+2. Detecta a família do arquivo e escolhe o validador certo (`DOCXSchemaValidator`, `PPTXSchemaValidator`); para `xlsx`, recusa validar e redireciona para `recalc.py`.
+3. Valida contra os schemas XSD oficiais (ISO/IEC 29500).
+4. **Modo `--original`:** usa o arquivo original/template como linha de base, para não acusar como "seu erro" um problema herdado do template.
+5. **Checagem de tracked changes** (`--author`, só docx): verifica se toda diferença de texto está devidamente marcada com `<w:ins>`/`<w:del>`.
+6. **Modo `--auto-repair`:** corrige automaticamente problemas comuns (IDs fora do limite, falta de `xml:space="preserve"`) e re-empacota.
+7. Código de saída: `0` (tudo passou), `1` (falhou), `2` (erro de uso).
 
-**Full code:**
+**Código completo:**
 
 ```python
 """
@@ -1270,28 +1270,26 @@ if __name__ == "__main__":
     main()
 ```
 
-### 7.3 Comparison Between the Two Scripts
+### 7.3 Comparativo entre os dois scripts
 
-| Aspect | `recalc.py` | `validate.py` |
+| Aspecto | `recalc.py` | `validate.py` |
 |---|---|---|
-| **What it checks** | Numerical correctness (formulas evaluate without error) | Structural correctness (XML valid per the ISO standard) |
-| **Engine behind it** | LibreOffice (headless, via a Basic macro) | XML parser + official XSD schemas |
-| **Output** | Structured JSON, always | Text + exit code (0/1/2) |
-| **Never does** | Report success without confirming the file actually changed | Validate against the original unless the user asks (`--original`) |
-| **Philosophy** | "A clean exit proves nothing — read the content" | "Warn when a check was NOT performed, don't pretend it was" |
+| **O que verifica** | Corretude numérica (fórmulas calculam sem erro) | Corretude estrutural (XML válido conforme o padrão ISO) |
+| **Motor por trás** | LibreOffice (headless, via macro Basic) | Parser XML + schemas XSD oficiais |
+| **Saída** | JSON estruturado, sempre | Texto + código de saída (0/1/2) |
+| **Nunca faz** | Reportar sucesso sem confirmar que o arquivo mudou de fato | Validar contra o original sem que o usuário peça (`--original`) |
+| **Filosofia** | "Um exit limpo não prova nada — leia o conteúdo" | "Avise quando uma checagem NÃO foi feita, não finja que foi" |
 
 ---
 
-## 8. Synthesis: Design Patterns That Run Through Everything
+## 8. Síntese: padrões de design que atravessam tudo
 
-1. **Three-level progressive disclosure** — `description` always loaded → `SKILL.md` loaded on activation → reference files loaded on demand within the task.
-2. **Clear separation of roles** — Skills = procedural knowledge; MCP = external connectivity; VM = execution environment.
-3. **`description` as an activation rule, not a summary** — written to explicitly state when to use *and* when not to use it, avoiding the wrong skill firing in ambiguous cases.
-4. **Skills package code, not just instructions** — reduces variance and error risk by reusing already-tested scripts instead of generating everything from scratch on every run.
-5. **Mandatory, programmatic post-execution verification** — none of the three skills (docx/xlsx/pptx) considers a task complete without running a validation script; none trusts a "clean exit code" alone as proof of success.
-6. **Fail-safe by default, not fail-open** — central example: `recalc.py` refuses to recalculate when doing so would destroy external links, requiring an explicit `--force` to accept the loss.
-7. **Transparency about what was NOT verified** — `validate.py` explicitly warns when a check (such as tracked changes) was not performed, rather than staying silent.
+1. **Divulgação progressiva em três níveis** — `description` sempre carregada → `SKILL.md` sob ativação → arquivos de referência sob demanda dentro da tarefa.
+2. **Separação clara de papéis** — Skills = conhecimento procedural; MCP = conectividade externa; VM = ambiente de execução.
+3. **`description` como regra de ativação, não resumo** — escrita para dizer explicitamente quando usar *e* quando não usar, evitando ativação da skill errada em casos ambíguos.
+4. **Skills empacotam código, não só instrução** — reduz variância e risco de erro ao reusar scripts já testados em vez de gerar tudo do zero a cada execução.
+5. **Verificação obrigatória e programática pós-execução** — nenhuma das três skills (docx/xlsx/pptx) considera uma tarefa concluída sem rodar um script de validação; nenhuma confia apenas no "código de saída limpo" como prova de sucesso.
+6. **Fail-safe por padrão, não fail-open** — exemplo central: `recalc.py` recusa recalcular quando isso destruiria links externos, exigindo `--force` explícito para aceitar a perda.
+7. **Transparência sobre o que NÃO foi verificado** — `validate.py` avisa explicitamente quando uma checagem (como tracked changes) não foi feita, em vez de ficar em silêncio.
 
-Read together, these patterns describe an architecture designed to produce reliable deliverables even when the agent producing them is also the one auditing them — a point worth noting for anyone working with GRC and segregation-of-duties controls applied to AI agents.
-
-last Update: August 2026
+Esses padrões, lidos em conjunto, descrevem uma arquitetura pensada para produzir entregáveis confiáveis mesmo quando o agente que os produz também é quem os audita — um ponto de atenção relevante para quem trabalha com GRC e controles de segregação de funções aplicados a agentes de IA.
