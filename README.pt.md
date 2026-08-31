@@ -1,5 +1,7 @@
 # O que é uma SKILL em uma LLM
 
+[English](README.md) | [Português](README.pt.md)
+
 Uma SKILL em uma LLM é um pacote de capacidade plugável que transforma o modelo de um gerador de texto para um agente que age.
 
 O modelo base, os pesos, sabe muito, mas por padrão ele só sabe falar. Ele não sabe como criar um slide, como pesquisar seus emails, como gerar uma imagem transparente, como agendar uma tarefa. A SKILL é a camada de harness — a parte dura, de engenharia, em torno do modelo — que ensina a ele COMO agir.
