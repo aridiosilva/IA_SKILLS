@@ -1,5 +1,7 @@
 # What a SKILL is in an LLM
 
+[English](README.md) | [Português](README.pt.md)
+
 A SKILL in an LLM is a pluggable capability package that turns the model from a text generator into an agent that acts.
 
 The base model — the weights — knows a lot, but by default it only knows how to talk. It doesn't know how to build a slide, search your emails, generate a transparent image, or schedule a task. The SKILL is the harness layer — the hard, engineering-heavy shell around the model — that teaches it HOW to act.
