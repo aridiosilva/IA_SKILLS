@@ -21,7 +21,7 @@
 
 ## 1. Arquitetura Agent + Skills + Computer
 
-[]()
+![](https://github.com/aridiosilva/IA_SKILLS/blob/main/Claude_AI/images/agent-skills-computer-diagram-no-CLAUDE-AI.png)
 
 O diagrama de referência ("Agent + Skills + Computer") divide a arquitetura em dois blocos principais:
 
