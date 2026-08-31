@@ -1,4 +1,5 @@
-# SKILLs para LLMs - Guia Completo
+# SKILLs para LLMs da META AI
+
 ### O que são, como funcionam no Meta AI e como implementar geração de arquivos
 
 ---
