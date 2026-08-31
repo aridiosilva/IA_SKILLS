@@ -1,4 +1,7 @@
 # SKILLs for LLMs - Complete Guide
+
+[English](README.md) | [Português](README.pt.md)
+
 ### What they are, how they work in Meta AI, and how to implement file generation
 
 > Content compiled from the conversation about SKILLs as part of the AI model's harness.
