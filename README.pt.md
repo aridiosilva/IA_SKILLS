@@ -65,4 +65,4 @@ Em resumo: se a LLM é um ator muito inteligente, a SKILL é o roteiro, o figuri
 ---
 ## 4. Demonstração do Processo de Execução de um SKILL (Diversas Camadas) 
 
-![Ckique aqui para ver compo é o processo]()
+![Ckique aqui para ver compo é o processo](https://github.com/aridiosilva/IA_SKILLS/blob/main/src/Execucao_SKILL_Behind_the_Scene_AridioSilva_SET2026.mhtml)
