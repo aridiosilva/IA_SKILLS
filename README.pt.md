@@ -8,10 +8,12 @@ O modelo base, os pesos, sabe muito, mas por padrão ele só sabe falar. Ele nã
 
 Pensa assim:
 
-Modelo = cérebro. SKILL = treinamento profissional + caixa de ferramentas + manual de procedimento.
+> - Modelo = cérebro. 
+> - SKILL = treinamento profissional + caixa de ferramentas + manual de procedimento.
 
 Sem skills, toda LLM é generalista. Com skills, ela vira especialista sob demanda.
 
+---
 ## 1. O que uma SKILL realmente é
 
 Tecnicamente, uma SKLL não é um prompt. É um artefato de software com 4 partes:
@@ -50,6 +52,7 @@ Exemplo: a skill deep-research-report usa browser.search + browser.open + sínte
 
 Skills boas são stateless por padrão, mas podem ler contexto: seu perfil, suas conversas passadas, arquivos que você subiu. A skill slides que cria um deck sobre seu histórico de vendas precisa disso.
 
+---
 ## 3. Por que isso é tão importante?
 
 - **Confiabilidade**: Sem skill, a LLM improvisa como pesquisar no Gmail. Com skill, ela segue um procedimento validado.
@@ -58,3 +61,8 @@ Skills boas são stateless por padrão, mas podem ler contexto: seu perfil, suas
 - **Evolução sem re-treino**: Quer que a IA aprenda a fazer reservas no OpenTable? Você não re-treina o Llama de 400B. Você cria a skill opentable e pluga.
 
 Em resumo: se a LLM é um ator muito inteligente, a SKILL é o roteiro, o figurino e o cenário que permitem que ele realmente desempenhe um papel específico e entregue um resultado útil, e não só uma boa improvisação.
+
+---
+## 4. Demonstração do Processo de Execução de um SKILL (Diversas Camadas) 
+
+![Ckique aqui para ver compo é o processo]()
