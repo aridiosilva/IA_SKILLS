@@ -1,0 +1,1902 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: file:///C:/Users/as294/Downloads/SKILL_EXECUTION_ARCHITECTURE_corrigido.html
+Subject: =?utf-8?Q?SKILL=20Execution=20Architecture=20=E2=80=94=20Behind=20the=20S?=
+ =?utf-8?Q?cenes=20(corrigido)?=
+Date: Tue, 1 Sep 2026 17:35:53 -0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--fFu9wJYZRmtKnuxPfj1HmRLYEUBo8kDRGXq1lYP7Q8----"
+
+
+------MultipartBoundary--fFu9wJYZRmtKnuxPfj1HmRLYEUBo8kDRGXq1lYP7Q8----
+Content-Type: text/html
+Content-ID: <frame-7DFA4C3615C5CA16B6810A690D3F2DA1@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/Users/as294/Downloads/SKILL_EXECUTION_ARCHITECTURE_corrigido.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-3d7d5de5-b913-440c-b7e1-abb757ad4113@mhtml.blink" />
+ =20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+  <title>SKILL Execution Architecture =E2=80=94 Behind the Scenes (corrigid=
+o)</title>
+ =20
+<meta id=3D"dcngeagmmhegagicpcmpinaoklddcgon"></head>
+<body>
+  <div id=3D"root"><div class=3D"min-h-screen bg-[#fafafa] text-[#0f172a] s=
+election:bg-violet-200"><header class=3D"sticky top-0 z-40 backdrop-blur-xl=
+ bg-white/85 border-b border-[#e5e7eb]"><div class=3D"max-w-[1320px] mx-aut=
+o px-5 md:px-8 h-[68px] flex items-center justify-between"><div class=3D"fl=
+ex items-center gap-3"><div class=3D"w-8 h-8 rounded-[9px] bg-[#0f172a] tex=
+t-white flex items-center justify-center font-bold text-[13px] mono">S</div=
+><div class=3D"leading-none"><div class=3D"text-[13px] font-semibold tracki=
+ng-tight text-[#000000]">SKILL EXECUTION</div><div class=3D"text-[10px] mon=
+o text-[#64748b] mt-[2px]">META AI / CLAUDE SPARK =E2=80=A2 LIGHT</div></di=
+v></div><div class=3D"flex items-center gap-2"><div class=3D"hidden md:flex=
+ items-center gap-1 p-1 rounded-full bg-[#f1f5f9] border border-[#e5e7eb]">=
+<button class=3D"px-3 py-1 rounded-full text-[11px] mono font-medium transi=
+tion text-[#64748b] hover:text-[#0f172a]">SIMPLIFICADO</button><button clas=
+s=3D"px-3 py-1 rounded-full text-[11px] mono font-medium transition bg-[#0f=
+172a] text-white">COMPLETO</button></div><div class=3D"w-2 h-2 rounded-full=
+ bg-emerald-500 animate-pulse"></div></div></div></header><main class=3D"ma=
+x-w-[1320px] mx-auto px-5 md:px-8 py-10 md:py-14"><div class=3D"max-w-3xl">=
+<div class=3D"inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-wh=
+ite border border-[#e5e7eb] text-[10px] mono text-[#475569] mb-5 shadow-sm"=
+><span class=3D"w-1.5 h-1.5 rounded-full bg-violet-500"></span> ARCHITECTUR=
+E DEEP DIVE =E2=80=A2 LIGHT THEME</div><h1 class=3D"text-[32px] md:text-[48=
+px] font-[800] leading-[0.95] tracking-[-0.03em] text-[#000000]">SKILL Exec=
+ution Architecture<br><span class=3D"text-[#475569] font-[600]">Behind the =
+Scenes</span></h1><p class=3D"mt-5 text-[15px] leading-[1.6] text-[#1e293b]=
+ max-w-[640px]"><span class=3D"text-[#000000] font-semibold">Model =3D brai=
+n</span>, <span class=3D"text-[#5b21b6] font-semibold">Skill =3D harness</s=
+pan>, <span class=3D"text-[#166534] font-semibold">Agent =3D Model + Harnes=
+s</span>. Como uma pergunta vira um agente aut=C3=B4nomo. Agora em modo cla=
+ro com contraste m=C3=A1ximo e diagrama leg=C3=ADvel.</p><div class=3D"mt-6=
+ flex flex-wrap gap-2 mono text-[11px]"><span class=3D"px-2.5 py-1 rounded =
+bg-[#dbeafe] border border-[#bfdbfe] text-[#1e40af]">ROUTER =E2=80=A2 azul =
+claro</span><span class=3D"px-2.5 py-1 rounded bg-[#dcfce7] border border-[=
+#bbf7d0] text-[#166534]">MCP =E2=80=A2 verde</span><span class=3D"px-2.5 py=
+-1 rounded bg-[#ffedd5] border border-[#fed7aa] text-[#9a3412]">SUB-AGENT =
+=E2=80=A2 laranja</span><span class=3D"px-2.5 py-1 rounded bg-[#fce7f3] bor=
+der border-[#fbcfe8] text-[#9d174d]">A2A =E2=80=A2 rosa</span></div></div><=
+section class=3D"mt-12 md:mt-16"><div class=3D"flex items-center justify-be=
+tween mb-6"><h2 class=3D"text-[12px] mono tracking-widest text-[#64748b] fo=
+nt-semibold">01 =E2=80=94 LAYERED STACK</h2><span class=3D"text-[11px] mono=
+ text-[#94a3b8]">8 camadas =E2=80=A2 tons past=C3=A9is =E2=80=A2 texto #111=
+827</span></div><div class=3D"relative rounded-[20px] bg-white border borde=
+r-[#e5e7eb] p-3 md:p-5 overflow-hidden shadow-sm"><div class=3D"absolute le=
+ft-[33px] md:left-[46px] top-[28px] bottom-[28px] w-px bg-gradient-to-b fro=
+m-[#dbeafe] via-[#ede9fe] to-[#dcfce7] opacity-80 hidden md:block"></div><d=
+iv class=3D"flex flex-col gap-3"><div class=3D"relative rounded-[14px] bord=
+er border-[#e5e7eb] p-3.5 md:p-4 pl-5 md:pl-5 flex gap-3.5"><div class=3D"w=
+-8 h-8 rounded-[9px] bg-zinc-900 border border-zinc-800 flex items-center j=
+ustify-center text-[11px] mono font-bold shrink-0 text-zinc-400">01</div><d=
+iv class=3D"flex-1 min-w-0"><div class=3D"flex flex-wrap items-baseline gap=
+-2"><div class=3D"text-[12px] mono font-semibold tracking-wide text-[#0f172=
+a]">USER</div><div class=3D"text-[11px] mono text-zinc-500">Natural Languag=
+e Intent</div></div><div class=3D"mt-2.5"><div class=3D"flex items-center g=
+ap-2 text-[13px] mono"><span class=3D"px-2.5 py-1 rounded bg-[#f8fafc] bord=
+er border-[#e5e7eb] text-[#0f172a] font-medium">"gere landing page + planil=
+ha de pre=C3=A7os"</span><span class=3D"text-[#94a3b8]">=E2=86=92 raw strin=
+g</span></div></div></div></div><div class=3D"relative rounded-[14px] borde=
+r border-[#e5e7eb] p-3.5 md:p-4 pl-5 md:pl-5 flex gap-3.5"><div class=3D"w-=
+8 h-8 rounded-[9px] bg-zinc-900 border border-zinc-800 flex items-center ju=
+stify-center text-[11px] mono font-bold shrink-0 text-zinc-400">02</div><di=
+v class=3D"flex-1 min-w-0"><div class=3D"flex flex-wrap items-baseline gap-=
+2"><div class=3D"text-[12px] mono font-semibold tracking-wide text-[#0f172a=
+]">ORCHESTRATOR / ROUTER</div><div class=3D"text-[11px] mono text-zinc-500"=
+>Semantic Skill Matching</div></div><div class=3D"mt-2.5"><div class=3D"fle=
+x flex-wrap gap-2 mono text-[11px]"><code class=3D"px-2.5 py-1 rounded bg-w=
+hite border border-[#bfdbfe] text-[#1e40af] font-medium">manifest.yaml =E2=
+=86=92 47 skills</code><code class=3D"px-2.5 py-1 rounded bg-white border b=
+order-[#bfdbfe] text-[#1e40af] font-medium">html-artifact 0.92</code><code =
+class=3D"px-2.5 py-1 rounded bg-white border border-[#bfdbfe] text-[#1e40af=
+] font-medium">xlsx-report 0.88</code></div><div class=3D"mt-3 text-[12px] =
+leading-[1.6] text-[#1e293b] mono max-w-[620px] bg-white/70 rounded-lg bord=
+er border-[#bfdbfe]/60 p-2.5">Router usa embeddings + LLM judge. N=C3=A3o =
+=C3=A9 regex. L=C3=AA <b class=3D"text-[#000000]">name, description, trigge=
+rs</b> de cada skill. Top-K &gt; threshold 0.75 entra no contexto.</div></d=
+iv></div></div><div class=3D"relative rounded-[14px] border border-[#e5e7eb=
+] p-3.5 md:p-4 pl-5 md:pl-5 flex gap-3.5"><div class=3D"w-8 h-8 rounded-[9p=
+x] bg-zinc-900 border border-zinc-800 flex items-center justify-center text=
+-[11px] mono font-bold shrink-0 text-zinc-400">03</div><div class=3D"flex-1=
+ min-w-0"><div class=3D"flex flex-wrap items-baseline gap-2"><div class=3D"=
+text-[12px] mono font-semibold tracking-wide text-[#0f172a]">SKILL LOADER</=
+div><div class=3D"text-[11px] mono text-zinc-500">skills.load_skill(name)</=
+div></div><div class=3D"mt-2.5"><div class=3D"flex flex-wrap gap-2 mono tex=
+t-[11px]"><span class=3D"px-2.5 py-1 rounded bg-[#0f172a] text-white font-b=
+old">SKILL.md =E2=86=92 SYSTEM PROMPT ALTA PRIORIDADE</span><span class=3D"=
+px-2.5 py-1 rounded bg-white border border-[#ddd6fe] text-[#5b21b6]">workfl=
+ow =E2=80=A2 rules =E2=80=A2 tools whitelist</span></div><div class=3D"mt-2=
+ text-[11px] mono bg-amber-50 border border-amber-200 text-[#92400e] px-2.5=
+ py-1.5 rounded-lg inline-flex">=E2=9A=A0 Hard harness: modelo n=C3=A3o pod=
+e ignorar. =C3=89 injetado acima de user prompt.</div></div></div></div><di=
+v class=3D"relative rounded-[14px] border border-[#e5e7eb] p-3.5 md:p-4 pl-=
+5 md:pl-5 flex gap-3.5"><div class=3D"w-8 h-8 rounded-[9px] bg-zinc-900 bor=
+der border-zinc-800 flex items-center justify-center text-[11px] mono font-=
+bold shrink-0 text-zinc-400">04</div><div class=3D"flex-1 min-w-0"><div cla=
+ss=3D"flex flex-wrap items-baseline gap-2"><div class=3D"text-[12px] mono f=
+ont-semibold tracking-wide text-[#0f172a]">LLM CORE + HARNESS</div><div cla=
+ss=3D"text-[11px] mono text-zinc-500">Claude Spark + C=C3=B3digo de Produ=
+=C3=A7=C3=A3o</div></div><div class=3D"mt-2.5"><div class=3D"grid md:grid-c=
+ols-2 gap-2.5"><div class=3D"rounded-lg bg-white border border-[#fde68a] p-=
+3 shadow-sm"><div class=3D"text-[10px] mono text-[#92400e] font-semibold tr=
+acking-widest mb-1">BRAIN</div><div class=3D"text-[13px] text-[#111827] lea=
+ding-[1.5]">Reasoning, planning, tool selection, reflection loop</div></div=
+><div class=3D"rounded-lg bg-white border border-[#fde68a] p-3 shadow-sm"><=
+div class=3D"text-[10px] mono text-[#92400e] font-semibold tracking-widest =
+mb-1">HARNESS</div><div class=3D"text-[13px] text-[#111827] leading-[1.5]">=
+Retry, timeout, streaming, context compression, guardrails</div></div></div=
+></div></div></div><div class=3D"relative rounded-[14px] border border-[#e5=
+e7eb] p-3.5 md:p-4 pl-5 md:pl-5 flex gap-3.5"><div class=3D"w-8 h-8 rounded=
+-[9px] bg-zinc-900 border border-zinc-800 flex items-center justify-center =
+text-[11px] mono font-bold shrink-0 text-zinc-400">05</div><div class=3D"fl=
+ex-1 min-w-0"><div class=3D"flex flex-wrap items-baseline gap-2"><div class=
+=3D"text-[12px] mono font-semibold tracking-wide text-[#0f172a]">MCP LAYER =
+=E2=80=94 Model Context Protocol</div><div class=3D"text-[11px] mono text-z=
+inc-500">USB-C das Skills =E2=80=A2 Vertical: Model =E2=86=92 Tool</div></d=
+iv><div class=3D"mt-2.5"><div class=3D"flex flex-wrap gap-1.5 mono text-[11=
+px]"><span class=3D"px-2.5 py-1 rounded bg-white border border-[#bbf7d0] te=
+xt-[#166534] font-medium">list_tools()</span><span class=3D"px-2.5 py-1 rou=
+nded bg-white border border-[#bbf7d0] text-[#166534] font-medium">call_tool=
+()</span><span class=3D"px-2.5 py-1 rounded bg-white border border-[#bbf7d0=
+] text-[#166534] font-medium">list_resources()</span><span class=3D"px-2.5 =
+py-1 rounded bg-white border border-[#bbf7d0] text-[#166534] font-medium">g=
+et_resource()</span><span class=3D"px-2.5 py-1 rounded bg-white border bord=
+er-[#bbf7d0] text-[#166534] font-medium">list_prompts()</span></div><div cl=
+ass=3D"mt-3 grid md:grid-cols-3 gap-2.5"><div class=3D"rounded-lg bg-white =
+border border-[#bbf7d0] p-3 shadow-sm"><div class=3D"text-[11px] mono text-=
+[#166534] font-semibold">tools</div><div class=3D"text-[12px] text-[#1e293b=
+] mt-1 leading-[1.5]">Fun=C3=A7=C3=B5es execut=C3=A1veis expostas pelo serv=
+idor</div></div><div class=3D"rounded-lg bg-white border border-[#bbf7d0] p=
+-3 shadow-sm"><div class=3D"text-[11px] mono text-[#166534] font-semibold">=
+resources</div><div class=3D"text-[12px] text-[#1e293b] mt-1 leading-[1.5]"=
+>Arquivos, dados, contexto j=C3=A1 existente</div></div><div class=3D"round=
+ed-lg bg-white border border-[#bbf7d0] p-3 shadow-sm"><div class=3D"text-[1=
+1px] mono text-[#166534] font-semibold">prompts</div><div class=3D"text-[12=
+px] text-[#1e293b] mt-1 leading-[1.5]">Templates pr=C3=A9-definidos da skil=
+l</div></div></div></div></div></div><div class=3D"relative rounded-[14px] =
+border border-[#e5e7eb] p-3.5 md:p-4 pl-5 md:pl-5 flex gap-3.5"><div class=
+=3D"w-8 h-8 rounded-[9px] bg-zinc-900 border border-zinc-800 flex items-cen=
+ter justify-center text-[11px] mono font-bold shrink-0 text-zinc-400">06</d=
+iv><div class=3D"flex-1 min-w-0"><div class=3D"flex flex-wrap items-baselin=
+e gap-2"><div class=3D"text-[12px] mono font-semibold tracking-wide text-[#=
+0f172a]">TOOLS &amp; SUB-AGENTES</div><div class=3D"text-[11px] mono text-z=
+inc-500">Cada tool =C3=A9 um sub-agente com loop pr=C3=B3prio</div></div><d=
+iv class=3D"mt-2.5"><div class=3D"grid grid-cols-2 md:grid-cols-4 gap-2.5">=
+<div class=3D"rounded-[10px] border p-2.5 bg-zinc-900 border-zinc-800"><div=
+ class=3D"flex items-center gap-1.5"><span class=3D"w-1.5 h-1.5 rounded-ful=
+l bg-sky-500"></span><span class=3D"text-[11px] mono font-medium text-zinc-=
+200 truncate">browser.search</span></div><div class=3D"text-[10px] mono tex=
+t-zinc-500 mt-1">busca web</div></div><div class=3D"rounded-[10px] border p=
+-2.5 bg-zinc-900 border-zinc-800"><div class=3D"flex items-center gap-1.5">=
+<span class=3D"w-1.5 h-1.5 rounded-full bg-amber-500"></span><span class=3D=
+"text-[11px] mono font-medium text-zinc-200 truncate">python_execution</spa=
+n></div><div class=3D"text-[10px] mono text-zinc-500 mt-1">pandas =E2=86=92=
+ xlsx</div></div><div class=3D"rounded-[10px] border p-2.5 bg-zinc-900 bord=
+er-zinc-800"><div class=3D"flex items-center gap-1.5"><span class=3D"w-1.5 =
+h-1.5 rounded-full bg-fuchsia-500"></span><span class=3D"text-[11px] mono f=
+ont-medium text-zinc-200 truncate">image_gen</span></div><div class=3D"text=
+-[10px] mono text-zinc-500 mt-1">gera=C3=A7=C3=A3o visual</div></div><div c=
+lass=3D"rounded-[10px] border p-2.5 bg-emerald-950 border-emerald-800"><div=
+ class=3D"flex items-center gap-1.5"><span class=3D"w-1.5 h-1.5 rounded-ful=
+l bg-emerald-500"></span><span class=3D"text-[11px] mono font-medium text-z=
+inc-200 truncate">create_web_artifact_agent</span></div><div class=3D"text-=
+[10px] mono text-zinc-500 mt-1">React sub-agent</div></div></div><div class=
+=3D"mt-3 text-[12px] mono text-[#7c2d12] leading-[1.6] bg-white/80 border b=
+order-[#fed7aa] rounded-lg p-2.5">create_web_artifact_agent =3D modelo filh=
+o com seu pr=C3=B3prio contexto, builda App.tsx isolado, n=C3=A3o polui con=
+texto pai.</div></div></div></div><div class=3D"relative rounded-[14px] bor=
+der border-[#e5e7eb] p-3.5 md:p-4 pl-5 md:pl-5 flex gap-3.5"><div class=3D"=
+w-8 h-8 rounded-[9px] bg-zinc-900 border border-zinc-800 flex items-center =
+justify-center text-[11px] mono font-bold shrink-0 text-zinc-400">07</div><=
+div class=3D"flex-1 min-w-0"><div class=3D"flex flex-wrap items-baseline ga=
+p-2"><div class=3D"text-[12px] mono font-semibold tracking-wide text-[#0f17=
+2a]">A2A =E2=80=94 Agent-to-Agent Protocol</div><div class=3D"text-[11px] m=
+ono text-zinc-500">Horizontal: Agente =E2=86=94 Agente</div></div><div clas=
+s=3D"mt-2.5"><div class=3D"flex flex-wrap items-center gap-2 mono text-[11p=
+x]"><span class=3D"px-2.5 py-1 rounded bg-white border border-[#fbcfe8] tex=
+t-[#9d174d] font-medium">delegate_task()</span><span class=3D"text-[#9ca3af=
+]">=E2=86=92</span><span class=3D"px-2.5 py-1 rounded bg-white border borde=
+r-[#fbcfe8] text-[#111827]">React Agent precisa dados</span><span class=3D"=
+text-[#9ca3af]">=E2=86=92</span><span class=3D"px-2.5 py-1 rounded bg-white=
+ border border-[#fbcfe8] text-[#9d174d] font-medium">xlsx sub-agent respond=
+e</span></div></div></div></div><div class=3D"relative rounded-[14px] borde=
+r border-[#e5e7eb] p-3.5 md:p-4 pl-5 md:pl-5 flex gap-3.5"><div class=3D"w-=
+8 h-8 rounded-[9px] bg-zinc-900 border border-zinc-800 flex items-center ju=
+stify-center text-[11px] mono font-bold shrink-0 text-zinc-400">08</div><di=
+v class=3D"flex-1 min-w-0"><div class=3D"flex flex-wrap items-baseline gap-=
+2"><div class=3D"text-[12px] mono font-semibold tracking-wide text-[#0f172a=
+]">OUTPUT</div><div class=3D"text-[11px] mono text-zinc-500">Artefato + Arq=
+uivos</div></div><div class=3D"mt-2.5"><div class=3D"flex flex-wrap gap-2 m=
+ono text-[11px]"><span class=3D"px-3 py-1 rounded bg-[#0f172a] text-white f=
+ont-semibold shadow-sm">preview.html</span><span class=3D"px-3 py-1 rounded=
+ bg-white border border-[#e2e8f0] text-[#0f172a]">report.xlsx</span><span c=
+lass=3D"px-3 py-1 rounded bg-white border border-[#e2e8f0] text-[#0f172a]">=
+doc.pdf</span><span class=3D"px-3 py-1 rounded bg-white border border-[#e2e=
+8f0] text-[#0f172a]">slides.docx</span></div></div></div></div></div></div>=
+<div class=3D"md:hidden mt-3 flex justify-center"><div class=3D"flex items-=
+center gap-1 p-1 rounded-full bg-white border border-[#e5e7eb] shadow-sm"><=
+button class=3D"px-3 py-1 rounded-full text-[11px] mono text-[#64748b]">SIM=
+PLE</button><button class=3D"px-3 py-1 rounded-full text-[11px] mono bg-[#0=
+f172a] text-white">COMPLETO</button></div></div></section><section class=3D=
+"mt-16"><div class=3D"flex flex-wrap items-center justify-between gap-3 mb-=
+6"><h2 class=3D"text-[12px] mono tracking-widest text-[#64748b] font-semibo=
+ld">02 =E2=80=94 SEQU=C3=8ANCIA OPERACIONAL =E2=80=A2 LEG=C3=8DVEL</h2><div=
+ class=3D"flex items-center gap-2"><span class=3D"text-[11px] mono text-[#9=
+4a3b8] hidden md:inline">min-height 900px =E2=80=A2 font 18px =E2=80=A2 scr=
+oll horizontal =E2=80=A2 zoom</span><span class=3D"text-[10px] mono px-2.5 =
+py-1 rounded-full border bg-[#dcfce7] text-[#166534] border-[#bbf7d0]">REND=
+ERED =E2=80=A2 18px</span></div></div><div class=3D"rounded-[20px] border b=
+order-[#e5e7eb] bg-white overflow-hidden shadow-sm"><div class=3D"flex flex=
+-wrap items-center justify-between gap-3 px-5 py-3 border-b border-[#e5e7eb=
+] bg-[#f8fafc]"><div class=3D"flex items-center gap-3"><div class=3D"flex g=
+ap-1.5"><div class=3D"w-3 h-3 rounded-full bg-red-400"></div><div class=3D"=
+w-3 h-3 rounded-full bg-yellow-400"></div><div class=3D"w-3 h-3 rounded-ful=
+l bg-green-400"></div></div><span class=3D"ml-1 text-[11px] mono text-[#475=
+569] font-medium">sequence.mmd =E2=80=94 900px =E2=80=A2 base theme =E2=80=
+=A2 fontSize 18 =E2=80=A2 padding 32px</span></div><div class=3D"flex items=
+-center gap-1.5"><div class=3D"flex items-center gap-1 p-1 rounded-full bg-=
+white border border-[#e5e7eb] shadow-sm"><button class=3D"w-7 h-7 rounded-f=
+ull bg-[#f1f5f9] hover:bg-[#e2e8f0] border border-[#e5e7eb] flex items-cent=
+er justify-center text-[#0f172a] font-bold text-[14px] transition" aria-lab=
+el=3D"Diminuir zoom">=E2=88=92</button><span class=3D"text-[11px] mono text=
+-[#0f172a] min-w-[42px] text-center font-medium">70%</span><button class=3D=
+"w-7 h-7 rounded-full bg-[#0f172a] hover:bg-black text-white flex items-cen=
+ter justify-center font-bold text-[14px] transition" aria-label=3D"Aumentar=
+ zoom">+</button></div><button class=3D"px-3.5 py-1.5 rounded-full bg-[#0f1=
+72a] text-white text-[11px] mono font-medium hover:bg-black transition shad=
+ow-sm flex items-center gap-1.5"><span class=3D"text-[12px]">=E2=A4=A2</spa=
+n> Expandir full-screen</button></div></div><div class=3D"relative bg-white=
+"><div class=3D"overflow-x-auto overflow-y-auto" style=3D"max-height: min(1=
+200px, 85vh);"><div class=3D"p-8 md:p-[32px] min-h-[900px] w-full flex item=
+s-start justify-center bg-white" style=3D"transform: scale(0.7); transform-=
+origin: left top; width: 142.857%;"><div class=3D"mermaid" data-processed=
+=3D"true"><svg id=3D"mermaid-1788291374141" width=3D"100%" xmlns=3D"http://=
+www.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/1999/xlink" style=3D"=
+max-width: 3085.5px;" viewBox=3D"-50 -10 3085.5 1206" role=3D"graphics-docu=
+ment document" aria-roledescription=3D"sequence"><g><rect x=3D"2835.5" y=3D=
+"1101" fill=3D"#eaeaea" stroke=3D"#666" width=3D"150" height=3D"65" name=3D=
+"O" rx=3D"3" ry=3D"3" class=3D"actor actor-bottom"></rect><text x=3D"2910.5=
+" y=3D"1133.5" dominant-baseline=3D"central" alignment-baseline=3D"central"=
+ class=3D"actor" style=3D"text-anchor: middle; font-size: 18px; font-weight=
+: 400; font-family: Inter, ui-sans-serif, system-ui;"><tspan x=3D"2910.5" d=
+y=3D"0">Output</tspan></text></g><g><rect x=3D"2605.5" y=3D"1101" fill=3D"#=
+eaeaea" stroke=3D"#666" width=3D"150" height=3D"65" name=3D"A2A" rx=3D"3" r=
+y=3D"3" class=3D"actor actor-bottom"></rect><text x=3D"2680.5" y=3D"1133.5"=
+ dominant-baseline=3D"central" alignment-baseline=3D"central" class=3D"acto=
+r" style=3D"text-anchor: middle; font-size: 18px; font-weight: 400; font-fa=
+mily: Inter, ui-sans-serif, system-ui;"><tspan x=3D"2680.5" dy=3D"0">A2A Bu=
+s</tspan></text></g><g><rect x=3D"2280" y=3D"1101" fill=3D"#eaeaea" stroke=
+=3D"#666" width=3D"165" height=3D"65" name=3D"SA" rx=3D"3" ry=3D"3" class=
+=3D"actor actor-bottom"></rect><text x=3D"2362.5" y=3D"1133.5" dominant-bas=
+eline=3D"central" alignment-baseline=3D"central" class=3D"actor" style=3D"t=
+ext-anchor: middle; font-size: 18px; font-weight: 400; font-family: Inter, =
+ui-sans-serif, system-ui;"><tspan x=3D"2362.5" dy=3D"0">Sub-Agent React</ts=
+pan></text></g><g><rect x=3D"1989" y=3D"1101" fill=3D"#eaeaea" stroke=3D"#6=
+66" width=3D"211" height=3D"65" name=3D"T2" rx=3D"3" ry=3D"3" class=3D"acto=
+r actor-bottom"></rect><text x=3D"2094.5" y=3D"1133.5" dominant-baseline=3D=
+"central" alignment-baseline=3D"central" class=3D"actor" style=3D"text-anch=
+or: middle; font-size: 18px; font-weight: 400; font-family: Inter, ui-sans-=
+serif, system-ui;"><tspan x=3D"2094.5" dy=3D"0">Tool python_execution</tspa=
+n></text></g><g><rect x=3D"1717" y=3D"1101" fill=3D"#eaeaea" stroke=3D"#666=
+" width=3D"192" height=3D"65" name=3D"T1" rx=3D"3" ry=3D"3" class=3D"actor =
+actor-bottom"></rect><text x=3D"1813" y=3D"1133.5" dominant-baseline=3D"cen=
+tral" alignment-baseline=3D"central" class=3D"actor" style=3D"text-anchor: =
+middle; font-size: 18px; font-weight: 400; font-family: Inter, ui-sans-seri=
+f, system-ui;"><tspan x=3D"1813" dy=3D"0">Tool browser.search</tspan></text=
+></g><g><rect x=3D"1487" y=3D"1101" fill=3D"#eaeaea" stroke=3D"#666" width=
+=3D"150" height=3D"65" name=3D"MCP" rx=3D"3" ry=3D"3" class=3D"actor actor-=
+bottom"></rect><text x=3D"1562" y=3D"1133.5" dominant-baseline=3D"central" =
+alignment-baseline=3D"central" class=3D"actor" style=3D"text-anchor: middle=
+; font-size: 18px; font-weight: 400; font-family: Inter, ui-sans-serif, sys=
+tem-ui;"><tspan x=3D"1562" dy=3D"0">MCP Server</tspan></text></g><g><rect x=
+=3D"1085" y=3D"1101" fill=3D"#eaeaea" stroke=3D"#666" width=3D"150" height=
+=3D"65" name=3D"M" rx=3D"3" ry=3D"3" class=3D"actor actor-bottom"></rect><t=
+ext x=3D"1160" y=3D"1133.5" dominant-baseline=3D"central" alignment-baselin=
+e=3D"central" class=3D"actor" style=3D"text-anchor: middle; font-size: 18px=
+; font-weight: 400; font-family: Inter, ui-sans-serif, system-ui;"><tspan x=
+=3D"1160" dy=3D"0">LLM Core</tspan></text></g><g><rect x=3D"745" y=3D"1101"=
+ fill=3D"#eaeaea" stroke=3D"#666" width=3D"150" height=3D"65" name=3D"L" rx=
+=3D"3" ry=3D"3" class=3D"actor actor-bottom"></rect><text x=3D"820" y=3D"11=
+33.5" dominant-baseline=3D"central" alignment-baseline=3D"central" class=3D=
+"actor" style=3D"text-anchor: middle; font-size: 18px; font-weight: 400; fo=
+nt-family: Inter, ui-sans-serif, system-ui;"><tspan x=3D"820" dy=3D"0">Skil=
+l Loader</tspan></text></g><g><rect x=3D"431" y=3D"1101" fill=3D"#eaeaea" s=
+troke=3D"#666" width=3D"150" height=3D"65" name=3D"R" rx=3D"3" ry=3D"3" cla=
+ss=3D"actor actor-bottom"></rect><text x=3D"506" y=3D"1133.5" dominant-base=
+line=3D"central" alignment-baseline=3D"central" class=3D"actor" style=3D"te=
+xt-anchor: middle; font-size: 18px; font-weight: 400; font-family: Inter, u=
+i-sans-serif, system-ui;"><tspan x=3D"506" dy=3D"0">Router</tspan></text></=
+g><g><rect x=3D"0" y=3D"1101" fill=3D"#eaeaea" stroke=3D"#666" width=3D"150=
+" height=3D"65" name=3D"U" rx=3D"3" ry=3D"3" class=3D"actor actor-bottom"><=
+/rect><text x=3D"75" y=3D"1133.5" dominant-baseline=3D"central" alignment-b=
+aseline=3D"central" class=3D"actor" style=3D"text-anchor: middle; font-size=
+: 18px; font-weight: 400; font-family: Inter, ui-sans-serif, system-ui;"><t=
+span x=3D"75" dy=3D"0">User</tspan></text></g><g><line id=3D"actor39" x1=3D=
+"2910.5" y1=3D"5" x2=3D"2910.5" y2=3D"1101" class=3D"200" stroke-width=3D"0=
+.5px" stroke=3D"#999"></line><g id=3D"root-39"><rect x=3D"2835.5" y=3D"0" f=
+ill=3D"#eaeaea" stroke=3D"#666" width=3D"150" height=3D"65" name=3D"O" rx=
+=3D"3" ry=3D"3" class=3D"actor actor-top"></rect><text x=3D"2910.5" y=3D"32=
+.5" dominant-baseline=3D"central" alignment-baseline=3D"central" class=3D"a=
+ctor" style=3D"text-anchor: middle; font-size: 18px; font-weight: 400; font=
+-family: Inter, ui-sans-serif, system-ui;"><tspan x=3D"2910.5" dy=3D"0">Out=
+put</tspan></text></g></g><g><line id=3D"actor38" x1=3D"2680.5" y1=3D"5" x2=
+=3D"2680.5" y2=3D"1101" class=3D"200" stroke-width=3D"0.5px" stroke=3D"#999=
+"></line><g id=3D"root-38"><rect x=3D"2605.5" y=3D"0" fill=3D"#eaeaea" stro=
+ke=3D"#666" width=3D"150" height=3D"65" name=3D"A2A" rx=3D"3" ry=3D"3" clas=
+s=3D"actor actor-top"></rect><text x=3D"2680.5" y=3D"32.5" dominant-baselin=
+e=3D"central" alignment-baseline=3D"central" class=3D"actor" style=3D"text-=
+anchor: middle; font-size: 18px; font-weight: 400; font-family: Inter, ui-s=
+ans-serif, system-ui;"><tspan x=3D"2680.5" dy=3D"0">A2A Bus</tspan></text><=
+/g></g><g><line id=3D"actor37" x1=3D"2362.5" y1=3D"5" x2=3D"2362.5" y2=3D"1=
+101" class=3D"200" stroke-width=3D"0.5px" stroke=3D"#999"></line><g id=3D"r=
+oot-37"><rect x=3D"2280" y=3D"0" fill=3D"#eaeaea" stroke=3D"#666" width=3D"=
+165" height=3D"65" name=3D"SA" rx=3D"3" ry=3D"3" class=3D"actor actor-top">=
+</rect><text x=3D"2362.5" y=3D"32.5" dominant-baseline=3D"central" alignmen=
+t-baseline=3D"central" class=3D"actor" style=3D"text-anchor: middle; font-s=
+ize: 18px; font-weight: 400; font-family: Inter, ui-sans-serif, system-ui;"=
+><tspan x=3D"2362.5" dy=3D"0">Sub-Agent React</tspan></text></g></g><g><lin=
+e id=3D"actor36" x1=3D"2094.5" y1=3D"5" x2=3D"2094.5" y2=3D"1101" class=3D"=
+200" stroke-width=3D"0.5px" stroke=3D"#999"></line><g id=3D"root-36"><rect =
+x=3D"1989" y=3D"0" fill=3D"#eaeaea" stroke=3D"#666" width=3D"211" height=3D=
+"65" name=3D"T2" rx=3D"3" ry=3D"3" class=3D"actor actor-top"></rect><text x=
+=3D"2094.5" y=3D"32.5" dominant-baseline=3D"central" alignment-baseline=3D"=
+central" class=3D"actor" style=3D"text-anchor: middle; font-size: 18px; fon=
+t-weight: 400; font-family: Inter, ui-sans-serif, system-ui;"><tspan x=3D"2=
+094.5" dy=3D"0">Tool python_execution</tspan></text></g></g><g><line id=3D"=
+actor35" x1=3D"1813" y1=3D"5" x2=3D"1813" y2=3D"1101" class=3D"200" stroke-=
+width=3D"0.5px" stroke=3D"#999"></line><g id=3D"root-35"><rect x=3D"1717" y=
+=3D"0" fill=3D"#eaeaea" stroke=3D"#666" width=3D"192" height=3D"65" name=3D=
+"T1" rx=3D"3" ry=3D"3" class=3D"actor actor-top"></rect><text x=3D"1813" y=
+=3D"32.5" dominant-baseline=3D"central" alignment-baseline=3D"central" clas=
+s=3D"actor" style=3D"text-anchor: middle; font-size: 18px; font-weight: 400=
+; font-family: Inter, ui-sans-serif, system-ui;"><tspan x=3D"1813" dy=3D"0"=
+>Tool browser.search</tspan></text></g></g><g><line id=3D"actor34" x1=3D"15=
+62" y1=3D"5" x2=3D"1562" y2=3D"1101" class=3D"200" stroke-width=3D"0.5px" s=
+troke=3D"#999"></line><g id=3D"root-34"><rect x=3D"1487" y=3D"0" fill=3D"#e=
+aeaea" stroke=3D"#666" width=3D"150" height=3D"65" name=3D"MCP" rx=3D"3" ry=
+=3D"3" class=3D"actor actor-top"></rect><text x=3D"1562" y=3D"32.5" dominan=
+t-baseline=3D"central" alignment-baseline=3D"central" class=3D"actor" style=
+=3D"text-anchor: middle; font-size: 18px; font-weight: 400; font-family: In=
+ter, ui-sans-serif, system-ui;"><tspan x=3D"1562" dy=3D"0">MCP Server</tspa=
+n></text></g></g><g><line id=3D"actor33" x1=3D"1160" y1=3D"5" x2=3D"1160" y=
+2=3D"1101" class=3D"200" stroke-width=3D"0.5px" stroke=3D"#999"></line><g i=
+d=3D"root-33"><rect x=3D"1085" y=3D"0" fill=3D"#eaeaea" stroke=3D"#666" wid=
+th=3D"150" height=3D"65" name=3D"M" rx=3D"3" ry=3D"3" class=3D"actor actor-=
+top"></rect><text x=3D"1160" y=3D"32.5" dominant-baseline=3D"central" align=
+ment-baseline=3D"central" class=3D"actor" style=3D"text-anchor: middle; fon=
+t-size: 18px; font-weight: 400; font-family: Inter, ui-sans-serif, system-u=
+i;"><tspan x=3D"1160" dy=3D"0">LLM Core</tspan></text></g></g><g><line id=
+=3D"actor32" x1=3D"820" y1=3D"5" x2=3D"820" y2=3D"1101" class=3D"200" strok=
+e-width=3D"0.5px" stroke=3D"#999"></line><g id=3D"root-32"><rect x=3D"745" =
+y=3D"0" fill=3D"#eaeaea" stroke=3D"#666" width=3D"150" height=3D"65" name=
+=3D"L" rx=3D"3" ry=3D"3" class=3D"actor actor-top"></rect><text x=3D"820" y=
+=3D"32.5" dominant-baseline=3D"central" alignment-baseline=3D"central" clas=
+s=3D"actor" style=3D"text-anchor: middle; font-size: 18px; font-weight: 400=
+; font-family: Inter, ui-sans-serif, system-ui;"><tspan x=3D"820" dy=3D"0">=
+Skill Loader</tspan></text></g></g><g><line id=3D"actor31" x1=3D"506" y1=3D=
+"5" x2=3D"506" y2=3D"1101" class=3D"200" stroke-width=3D"0.5px" stroke=3D"#=
+999"></line><g id=3D"root-31"><rect x=3D"431" y=3D"0" fill=3D"#eaeaea" stro=
+ke=3D"#666" width=3D"150" height=3D"65" name=3D"R" rx=3D"3" ry=3D"3" class=
+=3D"actor actor-top"></rect><text x=3D"506" y=3D"32.5" dominant-baseline=3D=
+"central" alignment-baseline=3D"central" class=3D"actor" style=3D"text-anch=
+or: middle; font-size: 18px; font-weight: 400; font-family: Inter, ui-sans-=
+serif, system-ui;"><tspan x=3D"506" dy=3D"0">Router</tspan></text></g></g><=
+g><line id=3D"actor30" x1=3D"75" y1=3D"5" x2=3D"75" y2=3D"1101" class=3D"20=
+0" stroke-width=3D"0.5px" stroke=3D"#999"></line><g id=3D"root-30"><rect x=
+=3D"0" y=3D"0" fill=3D"#eaeaea" stroke=3D"#666" width=3D"150" height=3D"65"=
+ name=3D"U" rx=3D"3" ry=3D"3" class=3D"actor actor-top"></rect><text x=3D"7=
+5" y=3D"32.5" dominant-baseline=3D"central" alignment-baseline=3D"central" =
+class=3D"actor" style=3D"text-anchor: middle; font-size: 18px; font-weight:=
+ 400; font-family: Inter, ui-sans-serif, system-ui;"><tspan x=3D"75" dy=3D"=
+0">User</tspan></text></g></g><style>#mermaid-1788291374141{font-family:Int=
+er,ui-sans-serif,system-ui;font-size:16px;fill:#0f172a;}#mermaid-1788291374=
+141 .error-icon{fill:#ffffff;}#mermaid-1788291374141 .error-text{fill:#0000=
+00;stroke:#000000;}#mermaid-1788291374141 .edge-thickness-normal{stroke-wid=
+th:2px;}#mermaid-1788291374141 .edge-thickness-thick{stroke-width:3.5px;}#m=
+ermaid-1788291374141 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-17882=
+91374141 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1788291374141 .e=
+dge-pattern-dotted{stroke-dasharray:2;}#mermaid-1788291374141 .marker{fill:=
+#0f172a;stroke:#0f172a;}#mermaid-1788291374141 .marker.cross{stroke:#0f172a=
+;}#mermaid-1788291374141 svg{font-family:Inter,ui-sans-serif,system-ui;font=
+-size:16px;}#mermaid-1788291374141 .actor{stroke:#0f172a;fill:#ffffff;}#mer=
+maid-1788291374141 text.actor&gt;tspan{fill:#0f172a;stroke:none;}#mermaid-1=
+788291374141 .actor-line{stroke:grey;}#mermaid-1788291374141 .messageLine0{=
+stroke-width:1.5;stroke-dasharray:none;stroke:#0f172a;}#mermaid-17882913741=
+41 .messageLine1{stroke-width:1.5;stroke-dasharray:2,2;stroke:#0f172a;}#mer=
+maid-1788291374141 #arrowhead path{fill:#0f172a;stroke:#0f172a;}#mermaid-17=
+88291374141 .sequenceNumber{fill:#f0e8d5;}#mermaid-1788291374141 #sequencen=
+umber{fill:#0f172a;}#mermaid-1788291374141 #crosshead path{fill:#0f172a;str=
+oke:#0f172a;}#mermaid-1788291374141 .messageText{fill:#0f172a;stroke:none;}=
+#mermaid-1788291374141 .labelBox{stroke:#0f172a;fill:#e0f2fe;}#mermaid-1788=
+291374141 .labelText,#mermaid-1788291374141 .labelText&gt;tspan{fill:#0f172=
+a;stroke:none;}#mermaid-1788291374141 .loopText,#mermaid-1788291374141 .loo=
+pText&gt;tspan{fill:#0f172a;stroke:none;}#mermaid-1788291374141 .loopLine{s=
+troke-width:2px;stroke-dasharray:2,2;stroke:#0f172a;fill:#0f172a;}#mermaid-=
+1788291374141 .note{stroke:#f59e0b;fill:#fef3c7;}#mermaid-1788291374141 .no=
+teText,#mermaid-1788291374141 .noteText&gt;tspan{fill:#0f172a;stroke:none;}=
+#mermaid-1788291374141 .activation0{fill:#f1f5f9;stroke:hsl(210, 40%, 86.07=
+84313725%);}#mermaid-1788291374141 .activation1{fill:#f1f5f9;stroke:hsl(210=
+, 40%, 86.0784313725%);}#mermaid-1788291374141 .activation2{fill:#f1f5f9;st=
+roke:hsl(210, 40%, 86.0784313725%);}#mermaid-1788291374141 .actorPopupMenu{=
+position:absolute;}#mermaid-1788291374141 .actorPopupMenuPanel{position:abs=
+olute;fill:#ffffff;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);filter:drop-=
+shadow(3px 5px 2px rgb(0 0 0 / 0.4));}#mermaid-1788291374141 .actor-man lin=
+e{stroke:#0f172a;fill:#ffffff;}#mermaid-1788291374141 .actor-man circle,#me=
+rmaid-1788291374141 line{stroke:#0f172a;fill:#ffffff;stroke-width:2px;}#mer=
+maid-1788291374141 :root{--mermaid-font-family:Inter,ui-sans-serif,system-u=
+i;}</style><g></g><defs><symbol id=3D"computer" width=3D"24" height=3D"24">=
+<path transform=3D"scale(.5)" d=3D"M2 2v13h20v-13h-20zm18 11h-16v-9h16v9zm-=
+10.228 6l.466-1h3.524l.467 1h-4.457zm14.228 3h-24l2-6h2.104l-1.33 4h18.45l-=
+1.297-4h2.073l2 6zm-5-10h-14v-7h14v7z"></path></symbol></defs><defs><symbol=
+ id=3D"database" fill-rule=3D"evenodd" clip-rule=3D"evenodd"><path transfor=
+m=3D"scale(.5)" d=3D"M12.258.001l.256.004.255.005.253.008.251.01.249.012.24=
+7.015.246.016.242.019.241.02.239.023.236.024.233.027.231.028.229.031.225.03=
+2.223.034.22.036.217.038.214.04.211.041.208.043.205.045.201.046.198.048.194=
+.05.191.051.187.053.183.054.18.056.175.057.172.059.168.06.163.061.16.063.15=
+5.064.15.066.074.033.073.033.071.034.07.034.069.035.068.035.067.035.066.035=
+.064.036.064.036.062.036.06.036.06.037.058.037.058.037.055.038.055.038.053.=
+038.052.038.051.039.05.039.048.039.047.039.045.04.044.04.043.04.041.04.04.0=
+41.039.041.037.041.036.041.034.041.033.042.032.042.03.042.029.042.027.042.0=
+26.043.024.043.023.043.021.043.02.043.018.044.017.043.015.044.013.044.012.0=
+44.011.045.009.044.007.045.006.045.004.045.002.045.001.045v17l-.001.045-.00=
+2.045-.004.045-.006.045-.007.045-.009.044-.011.045-.012.044-.013.044-.015.0=
+44-.017.043-.018.044-.02.043-.021.043-.023.043-.024.043-.026.043-.027.042-.=
+029.042-.03.042-.032.042-.033.042-.034.041-.036.041-.037.041-.039.041-.04.0=
+41-.041.04-.043.04-.044.04-.045.04-.047.039-.048.039-.05.039-.051.039-.052.=
+038-.053.038-.055.038-.055.038-.058.037-.058.037-.06.037-.06.036-.062.036-.=
+064.036-.064.036-.066.035-.067.035-.068.035-.069.035-.07.034-.071.034-.073.=
+033-.074.033-.15.066-.155.064-.16.063-.163.061-.168.06-.172.059-.175.057-.1=
+8.056-.183.054-.187.053-.191.051-.194.05-.198.048-.201.046-.205.045-.208.04=
+3-.211.041-.214.04-.217.038-.22.036-.223.034-.225.032-.229.031-.231.028-.23=
+3.027-.236.024-.239.023-.241.02-.242.019-.246.016-.247.015-.249.012-.251.01=
+-.253.008-.255.005-.256.004-.258.001-.258-.001-.256-.004-.255-.005-.253-.00=
+8-.251-.01-.249-.012-.247-.015-.245-.016-.243-.019-.241-.02-.238-.023-.236-=
+.024-.234-.027-.231-.028-.228-.031-.226-.032-.223-.034-.22-.036-.217-.038-.=
+214-.04-.211-.041-.208-.043-.204-.045-.201-.046-.198-.048-.195-.05-.19-.051=
+-.187-.053-.184-.054-.179-.056-.176-.057-.172-.059-.167-.06-.164-.061-.159-=
+.063-.155-.064-.151-.066-.074-.033-.072-.033-.072-.034-.07-.034-.069-.035-.=
+068-.035-.067-.035-.066-.035-.064-.036-.063-.036-.062-.036-.061-.036-.06-.0=
+37-.058-.037-.057-.037-.056-.038-.055-.038-.053-.038-.052-.038-.051-.039-.0=
+49-.039-.049-.039-.046-.039-.046-.04-.044-.04-.043-.04-.041-.04-.04-.041-.0=
+39-.041-.037-.041-.036-.041-.034-.041-.033-.042-.032-.042-.03-.042-.029-.04=
+2-.027-.042-.026-.043-.024-.043-.023-.043-.021-.043-.02-.043-.018-.044-.017=
+-.043-.015-.044-.013-.044-.012-.044-.011-.045-.009-.044-.007-.045-.006-.045=
+-.004-.045-.002-.045-.001-.045v-17l.001-.045.002-.045.004-.045.006-.045.007=
+-.045.009-.044.011-.045.012-.044.013-.044.015-.044.017-.043.018-.044.02-.04=
+3.021-.043.023-.043.024-.043.026-.043.027-.042.029-.042.03-.042.032-.042.03=
+3-.042.034-.041.036-.041.037-.041.039-.041.04-.041.041-.04.043-.04.044-.04.=
+046-.04.046-.039.049-.039.049-.039.051-.039.052-.038.053-.038.055-.038.056-=
+.038.057-.037.058-.037.06-.037.061-.036.062-.036.063-.036.064-.036.066-.035=
+.067-.035.068-.035.069-.035.07-.034.072-.034.072-.033.074-.033.151-.066.155=
+-.064.159-.063.164-.061.167-.06.172-.059.176-.057.179-.056.184-.054.187-.05=
+3.19-.051.195-.05.198-.048.201-.046.204-.045.208-.043.211-.041.214-.04.217-=
+.038.22-.036.223-.034.226-.032.228-.031.231-.028.234-.027.236-.024.238-.023=
+.241-.02.243-.019.245-.016.247-.015.249-.012.251-.01.253-.008.255-.005.256-=
+.004.258-.001.258.001zm-9.258 20.499v.01l.001.021.003.021.004.022.005.021.0=
+06.022.007.022.009.023.01.022.011.023.012.023.013.023.015.023.016.024.017.0=
+23.018.024.019.024.021.024.022.025.023.024.024.025.052.049.056.05.061.051.0=
+66.051.07.051.075.051.079.052.084.052.088.052.092.052.097.052.102.051.105.0=
+52.11.052.114.051.119.051.123.051.127.05.131.05.135.05.139.048.144.049.147.=
+047.152.047.155.047.16.045.163.045.167.043.171.043.176.041.178.041.183.039.=
+187.039.19.037.194.035.197.035.202.033.204.031.209.03.212.029.216.027.219.0=
+25.222.024.226.021.23.02.233.018.236.016.24.015.243.012.246.01.249.008.253.=
+005.256.004.259.001.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241=
+-.014.237-.016.233-.018.231-.021.226-.021.224-.024.22-.026.216-.027.212-.02=
+8.21-.031.205-.031.202-.034.198-.034.194-.036.191-.037.187-.039.183-.04.179=
+-.04.175-.042.172-.043.168-.044.163-.045.16-.046.155-.046.152-.047.148-.048=
+.143-.049.139-.049.136-.05.131-.05.126-.05.123-.051.118-.052.114-.051.11-.0=
+52.106-.052.101-.052.096-.052.092-.052.088-.053.083-.051.079-.052.074-.052.=
+07-.051.065-.051.06-.051.056-.05.051-.05.023-.024.023-.025.021-.024.02-.024=
+.019-.024.018-.024.017-.024.015-.023.014-.024.013-.023.012-.023.01-.023.01-=
+.022.008-.022.006-.022.006-.022.004-.022.004-.021.001-.021.001-.021v-4.127l=
+-.077.055-.08.053-.083.054-.085.053-.087.052-.09.052-.093.051-.095.05-.097.=
+05-.1.049-.102.049-.105.048-.106.047-.109.047-.111.046-.114.045-.115.045-.1=
+18.044-.12.043-.122.042-.124.042-.126.041-.128.04-.13.04-.132.038-.134.038-=
+.135.037-.138.037-.139.035-.142.035-.143.034-.144.033-.147.032-.148.031-.15=
+.03-.151.03-.153.029-.154.027-.156.027-.158.026-.159.025-.161.024-.162.023-=
+.163.022-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173=
+.014-.175.013-.175.012-.177.011-.178.01-.179.008-.179.008-.181.006-.182.005=
+-.182.004-.184.003-.184.002h-.37l-.184-.002-.184-.003-.182-.004-.182-.005-.=
+181-.006-.179-.008-.179-.008-.178-.01-.176-.011-.176-.012-.175-.013-.173-.0=
+14-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163=
+-.022-.162-.023-.161-.024-.159-.025-.157-.026-.156-.027-.155-.027-.153-.029=
+-.151-.03-.15-.03-.148-.031-.146-.032-.145-.033-.143-.034-.141-.035-.14-.03=
+5-.137-.037-.136-.037-.134-.038-.132-.038-.13-.04-.128-.04-.126-.041-.124-.=
+042-.122-.042-.12-.044-.117-.043-.116-.045-.113-.045-.112-.046-.109-.047-.1=
+06-.047-.105-.048-.102-.049-.1-.049-.097-.05-.095-.05-.093-.052-.09-.051-.0=
+87-.052-.085-.053-.083-.054-.08-.054-.077-.054v4.127zm0-5.654v.011l.001.021=
+.003.021.004.021.005.022.006.022.007.022.009.022.01.022.011.023.012.023.013=
+.023.015.024.016.023.017.024.018.024.019.024.021.024.022.024.023.025.024.02=
+4.052.05.056.05.061.05.066.051.07.051.075.052.079.051.084.052.088.052.092.0=
+52.097.052.102.052.105.052.11.051.114.051.119.052.123.05.127.051.131.05.135=
+.049.139.049.144.048.147.048.152.047.155.046.16.045.163.045.167.044.171.042=
+.176.042.178.04.183.04.187.038.19.037.194.036.197.034.202.033.204.032.209.0=
+3.212.028.216.027.219.025.222.024.226.022.23.02.233.018.236.016.24.014.243.=
+012.246.01.249.008.253.006.256.003.259.001.26-.001.257-.003.254-.006.25-.00=
+8.247-.01.244-.012.241-.015.237-.016.233-.018.231-.02.226-.022.224-.024.22-=
+.025.216-.027.212-.029.21-.03.205-.032.202-.033.198-.035.194-.036.191-.037.=
+187-.039.183-.039.179-.041.175-.042.172-.043.168-.044.163-.045.16-.045.155-=
+.047.152-.047.148-.048.143-.048.139-.05.136-.049.131-.05.126-.051.123-.051.=
+118-.051.114-.052.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-=
+.052.079-.052.074-.051.07-.052.065-.051.06-.05.056-.051.051-.049.023-.025.0=
+23-.024.021-.025.02-.024.019-.024.018-.024.017-.024.015-.023.014-.023.013-.=
+024.012-.022.01-.023.01-.023.008-.022.006-.022.006-.022.004-.021.004-.022.0=
+01-.021.001-.021v-4.139l-.077.054-.08.054-.083.054-.085.052-.087.053-.09.05=
+1-.093.051-.095.051-.097.05-.1.049-.102.049-.105.048-.106.047-.109.047-.111=
+.046-.114.045-.115.044-.118.044-.12.044-.122.042-.124.042-.126.041-.128.04-=
+.13.039-.132.039-.134.038-.135.037-.138.036-.139.036-.142.035-.143.033-.144=
+.033-.147.033-.148.031-.15.03-.151.03-.153.028-.154.028-.156.027-.158.026-.=
+159.025-.161.024-.162.023-.163.022-.165.021-.166.02-.167.019-.169.018-.169.=
+017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.011-.178.009-.179.009=
+-.179.007-.181.007-.182.005-.182.004-.184.003-.184.002h-.37l-.184-.002-.184=
+-.003-.182-.004-.182-.005-.181-.007-.179-.007-.179-.009-.178-.009-.176-.011=
+-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-=
+.019-.166-.02-.165-.021-.163-.022-.162-.023-.161-.024-.159-.025-.157-.026-.=
+156-.027-.155-.028-.153-.028-.151-.03-.15-.03-.148-.031-.146-.033-.145-.033=
+-.143-.033-.141-.035-.14-.036-.137-.036-.136-.037-.134-.038-.132-.039-.13-.=
+039-.128-.04-.126-.041-.124-.042-.122-.043-.12-.043-.117-.044-.116-.044-.11=
+3-.046-.112-.046-.109-.046-.106-.047-.105-.048-.102-.049-.1-.049-.097-.05-.=
+095-.051-.093-.051-.09-.051-.087-.053-.085-.052-.083-.054-.08-.054-.077-.05=
+4v4.139zm0-5.666v.011l.001.02.003.022.004.021.005.022.006.021.007.022.009.0=
+23.01.022.011.023.012.023.013.023.015.023.016.024.017.024.018.023.019.024.0=
+21.025.022.024.023.024.024.025.052.05.056.05.061.05.066.051.07.051.075.052.=
+079.051.084.052.088.052.092.052.097.052.102.052.105.051.11.052.114.051.119.=
+051.123.051.127.05.131.05.135.05.139.049.144.048.147.048.152.047.155.046.16=
+.045.163.045.167.043.171.043.176.042.178.04.183.04.187.038.19.037.194.036.1=
+97.034.202.033.204.032.209.03.212.028.216.027.219.025.222.024.226.021.23.02=
+.233.018.236.017.24.014.243.012.246.01.249.008.253.006.256.003.259.001.26-.=
+001.257-.003.254-.006.25-.008.247-.01.244-.013.241-.014.237-.016.233-.018.2=
+31-.02.226-.022.224-.024.22-.025.216-.027.212-.029.21-.03.205-.032.202-.033=
+.198-.035.194-.036.191-.037.187-.039.183-.039.179-.041.175-.042.172-.043.16=
+8-.044.163-.045.16-.045.155-.047.152-.047.148-.048.143-.049.139-.049.136-.0=
+49.131-.051.126-.05.123-.051.118-.052.114-.051.11-.052.106-.052.101-.052.09=
+6-.052.092-.052.088-.052.083-.052.079-.052.074-.052.07-.051.065-.051.06-.05=
+1.056-.05.051-.049.023-.025.023-.025.021-.024.02-.024.019-.024.018-.024.017=
+-.024.015-.023.014-.024.013-.023.012-.023.01-.022.01-.023.008-.022.006-.022=
+.006-.022.004-.022.004-.021.001-.021.001-.021v-4.153l-.077.054-.08.054-.083=
+.053-.085.053-.087.053-.09.051-.093.051-.095.051-.097.05-.1.049-.102.048-.1=
+05.048-.106.048-.109.046-.111.046-.114.046-.115.044-.118.044-.12.043-.122.0=
+43-.124.042-.126.041-.128.04-.13.039-.132.039-.134.038-.135.037-.138.036-.1=
+39.036-.142.034-.143.034-.144.033-.147.032-.148.032-.15.03-.151.03-.153.028=
+-.154.028-.156.027-.158.026-.159.024-.161.024-.162.023-.163.023-.165.021-.1=
+66.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.0=
+12-.177.01-.178.01-.179.009-.179.007-.181.006-.182.006-.182.004-.184.003-.1=
+84.001-.185.001-.185-.001-.184-.001-.184-.003-.182-.004-.182-.006-.181-.006=
+-.179-.007-.179-.009-.178-.01-.176-.01-.176-.012-.175-.013-.173-.014-.172-.=
+015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.023-.16=
+2-.023-.161-.024-.159-.024-.157-.026-.156-.027-.155-.028-.153-.028-.151-.03=
+-.15-.03-.148-.032-.146-.032-.145-.033-.143-.034-.141-.034-.14-.036-.137-.0=
+36-.136-.037-.134-.038-.132-.039-.13-.039-.128-.041-.126-.041-.124-.041-.12=
+2-.043-.12-.043-.117-.044-.116-.044-.113-.046-.112-.046-.109-.046-.106-.048=
+-.105-.048-.102-.048-.1-.05-.097-.049-.095-.051-.093-.051-.09-.052-.087-.05=
+2-.085-.053-.083-.053-.08-.054-.077-.054v4.153zm8.74-8.179l-.257.004-.254.0=
+05-.25.008-.247.011-.244.012-.241.014-.237.016-.233.018-.231.021-.226.022-.=
+224.023-.22.026-.216.027-.212.028-.21.031-.205.032-.202.033-.198.034-.194.0=
+36-.191.038-.187.038-.183.04-.179.041-.175.042-.172.043-.168.043-.163.045-.=
+16.046-.155.046-.152.048-.148.048-.143.048-.139.049-.136.05-.131.05-.126.05=
+1-.123.051-.118.051-.114.052-.11.052-.106.052-.101.052-.096.052-.092.052-.0=
+88.052-.083.052-.079.052-.074.051-.07.052-.065.051-.06.05-.056.05-.051.05-.=
+023.025-.023.024-.021.024-.02.025-.019.024-.018.024-.017.023-.015.024-.014.=
+023-.013.023-.012.023-.01.023-.01.022-.008.022-.006.023-.006.021-.004.022-.=
+004.021-.001.021-.001.021.001.021.001.021.004.021.004.022.006.021.006.023.0=
+08.022.01.022.01.023.012.023.013.023.014.023.015.024.017.023.018.024.019.02=
+4.02.025.021.024.023.024.023.025.051.05.056.05.06.05.065.051.07.052.074.051=
+.079.052.083.052.088.052.092.052.096.052.101.052.106.052.11.052.114.052.118=
+.051.123.051.126.051.131.05.136.05.139.049.143.048.148.048.152.048.155.046.=
+16.046.163.045.168.043.172.043.175.042.179.041.183.04.187.038.191.038.194.0=
+36.198.034.202.033.205.032.21.031.212.028.216.027.22.026.224.023.226.022.23=
+1.021.233.018.237.016.241.014.244.012.247.011.25.008.254.005.257.004.26.001=
+.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241-.014.237-.016.233-=
+.018.231-.021.226-.022.224-.023.22-.026.216-.027.212-.028.21-.031.205-.032.=
+202-.033.198-.034.194-.036.191-.038.187-.038.183-.04.179-.041.175-.042.172-=
+.043.168-.043.163-.045.16-.046.155-.046.152-.048.148-.048.143-.048.139-.049=
+.136-.05.131-.05.126-.051.123-.051.118-.051.114-.052.11-.052.106-.052.101-.=
+052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.051.07-.052.065-.051.=
+06-.05.056-.05.051-.05.023-.025.023-.024.021-.024.02-.025.019-.024.018-.024=
+.017-.023.015-.024.014-.023.013-.023.012-.023.01-.023.01-.022.008-.022.006-=
+.023.006-.021.004-.022.004-.021.001-.021.001-.021-.001-.021-.001-.021-.004-=
+.021-.004-.022-.006-.021-.006-.023-.008-.022-.01-.022-.01-.023-.012-.023-.0=
+13-.023-.014-.023-.015-.024-.017-.023-.018-.024-.019-.024-.02-.025-.021-.02=
+4-.023-.024-.023-.025-.051-.05-.056-.05-.06-.05-.065-.051-.07-.052-.074-.05=
+1-.079-.052-.083-.052-.088-.052-.092-.052-.096-.052-.101-.052-.106-.052-.11=
+-.052-.114-.052-.118-.051-.123-.051-.126-.051-.131-.05-.136-.05-.139-.049-.=
+143-.048-.148-.048-.152-.048-.155-.046-.16-.046-.163-.045-.168-.043-.172-.0=
+43-.175-.042-.179-.041-.183-.04-.187-.038-.191-.038-.194-.036-.198-.034-.20=
+2-.033-.205-.032-.21-.031-.212-.028-.216-.027-.22-.026-.224-.023-.226-.022-=
+.231-.021-.233-.018-.237-.016-.241-.014-.244-.012-.247-.011-.25-.008-.254-.=
+005-.257-.004-.26-.001-.26.001z"></path></symbol></defs><defs><symbol id=3D=
+"clock" width=3D"24" height=3D"24"><path transform=3D"scale(.5)" d=3D"M12 2=
+c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c=
+-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848=
+ 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1=
+.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014=
+l.985 6.238 5.394 1.011z"></path></symbol></defs><defs><marker id=3D"arrowh=
+ead" refX=3D"7.9" refY=3D"5" markerUnits=3D"userSpaceOnUse" markerWidth=3D"=
+12" markerHeight=3D"12" orient=3D"auto"><path d=3D"M 0 0 L 10 5 L 0 10 z"><=
+/path></marker></defs><defs><marker id=3D"crosshead" markerWidth=3D"15" mar=
+kerHeight=3D"8" orient=3D"auto" refX=3D"4" refY=3D"4.5"><path fill=3D"none"=
+ stroke=3D"#000000" stroke-width=3D"1pt" d=3D"M 1,2 L 6,7 M 6,2 L 1,7" styl=
+e=3D"stroke-dasharray: 0, 0;"></path></marker></defs><defs><marker id=3D"fi=
+lled-head" refX=3D"15.5" refY=3D"7" markerWidth=3D"20" markerHeight=3D"28" =
+orient=3D"auto"><path d=3D"M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></def=
+s><defs><marker id=3D"sequencenumber" refX=3D"15" refY=3D"15" markerWidth=
+=3D"60" markerHeight=3D"40" orient=3D"auto"><circle cx=3D"15" cy=3D"15" r=
+=3D"6"></circle></marker></defs><text x=3D"289" y=3D"80" text-anchor=3D"mid=
+dle" dominant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"me=
+ssageText" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-ui=
+; font-size: 18px; font-weight: 400;">gere landing page + planilha de pre=
+=C3=A7os</text><line x1=3D"76" y1=3D"121" x2=3D"502" y2=3D"121" class=3D"me=
+ssageLine0" stroke-width=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead=
+)" style=3D"fill: none;"></line><text x=3D"507" y=3D"136" text-anchor=3D"mi=
+ddle" dominant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"m=
+essageText" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-u=
+i; font-size: 18px; font-weight: 400;">Semantic match html-artifact 0.92 + =
+xlsx-report 0.88</text><path d=3D"M 507,177 C 567,167 567,207 507,197" clas=
+s=3D"messageLine0" stroke-width=3D"2" stroke=3D"none" marker-end=3D"url(#ar=
+rowhead)" style=3D"fill: none;"></path><text x=3D"662" y=3D"222" text-ancho=
+r=3D"middle" dominant-baseline=3D"middle" alignment-baseline=3D"middle" cla=
+ss=3D"messageText" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, s=
+ystem-ui; font-size: 18px; font-weight: 400;">load_skill(html-artifact)</te=
+xt><line x1=3D"507" y1=3D"263" x2=3D"816" y2=3D"263" class=3D"messageLine0"=
+ stroke-width=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D=
+"fill: none;"></line><text x=3D"989" y=3D"278" text-anchor=3D"middle" domin=
+ant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"messageText"=
+ dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-ui; font-siz=
+e: 18px; font-weight: 400;">Inject SKILL.md high priority</text><line x1=3D=
+"821" y1=3D"319" x2=3D"1156" y2=3D"319" class=3D"messageLine0" stroke-width=
+=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"fill: none;"=
+></line><text x=3D"1360" y=3D"334" text-anchor=3D"middle" dominant-baseline=
+=3D"middle" alignment-baseline=3D"middle" class=3D"messageText" dy=3D"1em" =
+style=3D"font-family: Inter, ui-sans-serif, system-ui; font-size: 18px; fon=
+t-weight: 400;">discover tools via MCP list_tools</text><line x1=3D"1161" y=
+1=3D"375" x2=3D"1558" y2=3D"375" class=3D"messageLine0" stroke-width=3D"2" =
+stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"fill: none;"></line=
+><text x=3D"1363" y=3D"390" text-anchor=3D"middle" dominant-baseline=3D"mid=
+dle" alignment-baseline=3D"middle" class=3D"messageText" dy=3D"1em" style=
+=3D"font-family: Inter, ui-sans-serif, system-ui; font-size: 18px; font-wei=
+ght: 400;">create_web_artifact_agent available</text><line x1=3D"1561" y1=
+=3D"431" x2=3D"1164" y2=3D"431" class=3D"messageLine1" stroke-width=3D"2" s=
+troke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"stroke-dasharray: 3,=
+ 3; fill: none;"></line><text x=3D"1760" y=3D"446" text-anchor=3D"middle" d=
+ominant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"messageT=
+ext" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-ui; font=
+-size: 18px; font-weight: 400;">create_web_artifact_agent prompt</text><lin=
+e x1=3D"1161" y1=3D"487" x2=3D"2358.5" y2=3D"487" class=3D"messageLine0" st=
+roke-width=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"fi=
+ll: none;"></line><text x=3D"2364" y=3D"502" text-anchor=3D"middle" dominan=
+t-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"messageText" d=
+y=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-ui; font-size:=
+ 18px; font-weight: 400;">Build React Tailwind</text><path d=3D"M 2363.5,54=
+3 C 2423.5,533 2423.5,573 2363.5,563" class=3D"messageLine0" stroke-width=
+=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"fill: none;"=
+></path><text x=3D"2520" y=3D"588" text-anchor=3D"middle" dominant-baseline=
+=3D"middle" alignment-baseline=3D"middle" class=3D"messageText" dy=3D"1em" =
+style=3D"font-family: Inter, ui-sans-serif, system-ui; font-size: 18px; fon=
+t-weight: 400;">request need pricing data</text><line x1=3D"2363.5" y1=3D"6=
+29" x2=3D"2676.5" y2=3D"629" class=3D"messageLine0" stroke-width=3D"2" stro=
+ke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"fill: none;"></line><te=
+xt x=3D"1922" y=3D"644" text-anchor=3D"middle" dominant-baseline=3D"middle"=
+ alignment-baseline=3D"middle" class=3D"messageText" dy=3D"1em" style=3D"fo=
+nt-family: Inter, ui-sans-serif, system-ui; font-size: 18px; font-weight: 4=
+00;">delegate xlsx-report</text><line x1=3D"2679.5" y1=3D"685" x2=3D"1164" =
+y2=3D"685" class=3D"messageLine0" stroke-width=3D"2" stroke=3D"none" marker=
+-end=3D"url(#arrowhead)" style=3D"fill: none;"></line><text x=3D"1360" y=3D=
+"700" text-anchor=3D"middle" dominant-baseline=3D"middle" alignment-baselin=
+e=3D"middle" class=3D"messageText" dy=3D"1em" style=3D"font-family: Inter, =
+ui-sans-serif, system-ui; font-size: 18px; font-weight: 400;">list_tools py=
+thon_execution</text><line x1=3D"1161" y1=3D"741" x2=3D"1558" y2=3D"741" cl=
+ass=3D"messageLine0" stroke-width=3D"2" stroke=3D"none" marker-end=3D"url(#=
+arrowhead)" style=3D"fill: none;"></line><text x=3D"1626" y=3D"756" text-an=
+chor=3D"middle" dominant-baseline=3D"middle" alignment-baseline=3D"middle" =
+class=3D"messageText" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif=
+, system-ui; font-size: 18px; font-weight: 400;">execute df to excel</text>=
+<line x1=3D"1161" y1=3D"797" x2=3D"2090.5" y2=3D"797" class=3D"messageLine0=
+" stroke-width=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=
+=3D"fill: none;"></line><text x=3D"2386" y=3D"812" text-anchor=3D"middle" d=
+ominant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"messageT=
+ext" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-ui; font=
+-size: 18px; font-weight: 400;">file ready</text><line x1=3D"2095.5" y1=3D"=
+853" x2=3D"2676.5" y2=3D"853" class=3D"messageLine1" stroke-width=3D"2" str=
+oke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"stroke-dasharray: 3, 3=
+; fill: none;"></line><text x=3D"2523" y=3D"868" text-anchor=3D"middle" dom=
+inant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"messageTex=
+t" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-ui; font-s=
+ize: 18px; font-weight: 400;">pricing data ready</text><line x1=3D"2679.5" =
+y1=3D"909" x2=3D"2366.5" y2=3D"909" class=3D"messageLine1" stroke-width=3D"=
+2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"stroke-dasharray=
+: 3, 3; fill: none;"></line><text x=3D"1763" y=3D"924" text-anchor=3D"middl=
+e" dominant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"mess=
+ageText" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-ui; =
+font-size: 18px; font-weight: 400;">preview html ready</text><line x1=3D"23=
+61.5" y1=3D"965" x2=3D"1164" y2=3D"965" class=3D"messageLine1" stroke-width=
+=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D"stroke-dasha=
+rray: 3, 3; fill: none;"></line><text x=3D"2034" y=3D"980" text-anchor=3D"m=
+iddle" dominant-baseline=3D"middle" alignment-baseline=3D"middle" class=3D"=
+messageText" dy=3D"1em" style=3D"font-family: Inter, ui-sans-serif, system-=
+ui; font-size: 18px; font-weight: 400;">Return artifact plus file</text><li=
+ne x1=3D"1161" y1=3D"1021" x2=3D"2906.5" y2=3D"1021" class=3D"messageLine1"=
+ stroke-width=3D"2" stroke=3D"none" marker-end=3D"url(#arrowhead)" style=3D=
+"stroke-dasharray: 3, 3; fill: none;"></line><text x=3D"1494" y=3D"1036" te=
+xt-anchor=3D"middle" dominant-baseline=3D"middle" alignment-baseline=3D"mid=
+dle" class=3D"messageText" dy=3D"1em" style=3D"font-family: Inter, ui-sans-=
+serif, system-ui; font-size: 18px; font-weight: 400;">Render preview plus d=
+ownloads</text><line x1=3D"2909.5" y1=3D"1077" x2=3D"79" y2=3D"1077" class=
+=3D"messageLine1" stroke-width=3D"2" stroke=3D"none" marker-end=3D"url(#arr=
+owhead)" style=3D"stroke-dasharray: 3, 3; fill: none;"></line></svg></div><=
+/div></div></div><div class=3D"px-5 py-3 bg-[#f8fafc] border-t border-[#e5e=
+7eb] flex flex-wrap gap-4 text-[11px] mono text-[#475569] items-center"><sp=
+an><b class=3D"text-[#000000]">14 passos</b> =E2=80=A2 9 participantes =E2=
+=80=A2 fonte 18px</span><span class=3D"hidden md:inline text-[#64748b]">=E2=
+=86=B3 Router =E2=86=92 Loader =E2=86=92 MCP =E2=86=92 Sub-agente =E2=86=92=
+ A2A =E2=86=92 Output =E2=80=A2 SVG 100% largura =E2=80=A2 overflow-x auto<=
+/span><span class=3D"ml-auto flex items-center gap-2"><span class=3D"px-2 p=
+y-0.5 rounded bg-white border border-[#e5e7eb]">padding 32px</span><span cl=
+ass=3D"px-2 py-0.5 rounded bg-white border border-[#e5e7eb]">theme base</sp=
+an><span class=3D"px-2 py-0.5 rounded bg-[#dbeafe] border border-[#bfdbfe] =
+text-[#1e40af]">leg=C3=ADvel</span></span></div></div></section><section cl=
+ass=3D"mt-16 grid md:grid-cols-[1.2fr_0.8fr] gap-6"><div><h2 class=3D"text-=
+[12px] mono tracking-widest text-[#64748b] font-semibold mb-6">03 =E2=80=94=
+ MCP vs A2A</h2><div class=3D"rounded-[16px] border border-[#e5e7eb] overfl=
+ow-hidden bg-white shadow-sm"><div class=3D"grid grid-cols-[100px_1fr_1fr] =
+text-[11px] mono bg-[#f8fafc] border-b border-[#e5e7eb]"><div class=3D"p-3 =
+text-[#64748b] font-medium"></div><div class=3D"p-3 border-l border-[#e5e7e=
+b] flex items-center gap-2"><span class=3D"w-2 h-2 rounded-full bg-[#16a34a=
+]"></span><span class=3D"text-[#166534] font-semibold">MCP</span></div><div=
+ class=3D"p-3 border-l border-[#e5e7eb] flex items-center gap-2"><span clas=
+s=3D"w-2 h-2 rounded-full bg-[#ec4899]"></span><span class=3D"text-[#9d174d=
+] font-semibold">A2A</span></div></div><div class=3D"grid grid-cols-[100px_=
+1fr_1fr] text-[13px] leading-[1.6] bg-[#f8fafc] border-b border-[#e5e7eb]/7=
+0 last:border-0"><div class=3D"p-3 mono text-[11px] text-[#64748b] font-med=
+ium border-r border-[#e5e7eb]/60 bg-[#f8fafc]/60">Eixo</div><div class=3D"p=
+-3 text-[#0f172a] border-r border-[#e5e7eb]/60">Vertical: Model =E2=86=92 T=
+ool</div><div class=3D"p-3 text-[#0f172a]">Horizontal: Agent =E2=86=94 Agen=
+t</div></div><div class=3D"grid grid-cols-[100px_1fr_1fr] text-[13px] leadi=
+ng-[1.6] bg-white border-b border-[#e5e7eb]/70 last:border-0"><div class=3D=
+"p-3 mono text-[11px] text-[#64748b] font-medium border-r border-[#e5e7eb]/=
+60 bg-[#f8fafc]/60">Dire=C3=A7=C3=A3o</div><div class=3D"p-3 text-[#0f172a]=
+ border-r border-[#e5e7eb]/60">Top-down: modelo consome</div><div class=3D"=
+p-3 text-[#0f172a]">Peer-to-peer: agentes negociam</div></div><div class=3D=
+"grid grid-cols-[100px_1fr_1fr] text-[13px] leading-[1.6] bg-[#f8fafc] bord=
+er-b border-[#e5e7eb]/70 last:border-0"><div class=3D"p-3 mono text-[11px] =
+text-[#64748b] font-medium border-r border-[#e5e7eb]/60 bg-[#f8fafc]/60">An=
+alogia</div><div class=3D"p-3 text-[#0f172a] border-r border-[#e5e7eb]/60">=
+USB-C =E2=80=94 pluga ferramenta</div><div class=3D"p-3 text-[#0f172a]">Sla=
+ck entre equipes</div></div><div class=3D"grid grid-cols-[100px_1fr_1fr] te=
+xt-[13px] leading-[1.6] bg-white border-b border-[#e5e7eb]/70 last:border-0=
+"><div class=3D"p-3 mono text-[11px] text-[#64748b] font-medium border-r bo=
+rder-[#e5e7eb]/60 bg-[#f8fafc]/60">Protocolo</div><div class=3D"p-3 text-[#=
+0f172a] border-r border-[#e5e7eb]/60">list_tools / call_tool</div><div clas=
+s=3D"p-3 text-[#0f172a]">delegate_task / message</div></div><div class=3D"g=
+rid grid-cols-[100px_1fr_1fr] text-[13px] leading-[1.6] bg-[#f8fafc] border=
+-b border-[#e5e7eb]/70 last:border-0"><div class=3D"p-3 mono text-[11px] te=
+xt-[#64748b] font-medium border-r border-[#e5e7eb]/60 bg-[#f8fafc]/60">Exem=
+plo</div><div class=3D"p-3 text-[#0f172a] border-r border-[#e5e7eb]/60">pyt=
+hon_execution, browser.search</div><div class=3D"p-3 text-[#0f172a]">React =
+agent pede dados ao xlsx agent</div></div><div class=3D"grid grid-cols-[100=
+px_1fr_1fr] text-[13px] leading-[1.6] bg-white border-b border-[#e5e7eb]/70=
+ last:border-0"><div class=3D"p-3 mono text-[11px] text-[#64748b] font-medi=
+um border-r border-[#e5e7eb]/60 bg-[#f8fafc]/60">Quem fala</div><div class=
+=3D"p-3 text-[#0f172a] border-r border-[#e5e7eb]/60">MCP Server exp=C3=B5e =
+contrato</div><div class=3D"p-3 text-[#0f172a]">A2A Bus roteia mensagens</d=
+iv></div></div></div><div class=3D"rounded-[16px] bg-gradient-to-br from-[#=
+dbeafe] via-white to-[#fce7f3] border border-[#e5e7eb] p-5 shadow-sm"><div =
+class=3D"text-[11px] mono tracking-widest text-[#64748b] font-semibold mb-4=
+">VISUAL COMPARISON</div><div class=3D"space-y-5"><div class=3D"flex gap-3"=
+><div class=3D"w-8 h-8 rounded-[10px] bg-[#dcfce7] border border-[#bbf7d0] =
+flex items-center justify-center text-[11px] mono text-[#166534] font-bold"=
+>V</div><div><div class=3D"text-[13px] text-[#000000] font-semibold">MCP =
+=3D Coluna vertebral</div><div class=3D"text-[12px] text-[#1e293b] mt-1 lea=
+ding-[1.6]">Modelo descobre e chama ferramentas. Sem MCP, modelo fica cego =
+=E2=80=94 n=C3=A3o sabe que existe python ou browser.</div></div></div><div=
+ class=3D"h-px bg-[#e5e7eb]"></div><div class=3D"flex gap-3"><div class=3D"=
+w-8 h-8 rounded-[10px] bg-[#fce7f3] border border-[#fbcfe8] flex items-cent=
+er justify-center text-[11px] mono text-[#9d174d] font-bold">H</div><div><d=
+iv class=3D"text-[13px] text-[#000000] font-semibold">A2A =3D Tecido conjun=
+tivo</div><div class=3D"text-[12px] text-[#1e293b] mt-1 leading-[1.6]">Sub-=
+agentes trocam contexto sem voltar ao core. Evita ping-pong e duplica=C3=A7=
+=C3=A3o de trabalho.</div></div></div><div class=3D"rounded-lg bg-[#0f172a]=
+ border border-[#1e293b] p-3 mono text-[11px] leading-5 text-[#e2e8f0]">// =
+ambos usam JSON-RPC 2.0 por baixo
+MCP: { "method": "tools/call", "params": {...} }
+A2A: { "method": "tasks/send", "params": {...} }</div></div></div></section=
+><section class=3D"mt-16"><h2 class=3D"text-[12px] mono tracking-widest tex=
+t-[#64748b] font-semibold mb-6">04 =E2=80=94 FLUXO DE DECIS=C3=83O =E2=80=
+=A2 3 CAMINHOS</h2><div class=3D"grid md:grid-cols-3 gap-4"><div class=3D"r=
+ounded-[16px] border border-[#e5e7eb] bg-[#f8fafc] p-5 flex flex-col"><div =
+class=3D"flex items-center justify-between"><span class=3D"text-[10px] mono=
+ tracking-widest text-[#64748b]">PATH A</span><span class=3D"text-[10px] mo=
+no px-2 py-0.5 rounded bg-[#f1f5f9] border border-[#e5e7eb] text-[#475569]"=
+>~2-4s</span></div><div class=3D"mt-3 flex items-center gap-2"><h3 class=3D=
+"text-[16px] font-semibold text-[#000000]">Simple</h3><span class=3D"text-[=
+10px] mono px-2 py-0.5 rounded border bg-[#f1f5f9] border-[#e5e7eb] text-[#=
+475569]">1 skill =E2=80=A2 1 tool</span></div><p class=3D"mt-2 text-[12px] =
+leading-5 text-[#64748b]">Pergunta direta casa com uma skill s=C3=B3.</p><d=
+iv class=3D"mt-4 space-y-1.5"><div class=3D"flex gap-2 text-[11px] mono tex=
+t-[#475569]"><span class=3D"text-[#94a3b8]">1.</span><span class=3D"">Route=
+r match 0.92</span></div><div class=3D"flex gap-2 text-[11px] mono text-[#4=
+75569]"><span class=3D"text-[#94a3b8]">2.</span><span class=3D"">load_skill=
+()</span></div><div class=3D"flex gap-2 text-[11px] mono text-[#475569]"><s=
+pan class=3D"text-[#94a3b8]">3.</span><span class=3D"">1x call_tool</span><=
+/div><div class=3D"flex gap-2 text-[11px] mono text-[#475569]"><span class=
+=3D"text-[#94a3b8]">4.</span><span class=3D"text-[#0f172a] font-medium">Ret=
+urn</span></div></div></div><div class=3D"rounded-[16px] border border-blue=
+-500/30 bg-blue-500/[0.06] p-5 flex flex-col"><div class=3D"flex items-cent=
+er justify-between"><span class=3D"text-[10px] mono tracking-widest text-zi=
+nc-500">PATH B</span><span class=3D"text-[10px] mono px-2 py-0.5 rounded bg=
+-zinc-800 border border-zinc-700 text-zinc-400">~6-12s</span></div><div cla=
+ss=3D"mt-3 flex items-center gap-2"><h3 class=3D"text-[16px] font-semibold =
+text-white">Composed</h3><span class=3D"text-[10px] mono px-2 py-0.5 rounde=
+d border bg-blue-500/15 border-blue-500/20 text-blue-200">2+ skills =E2=80=
+=A2 A2A</span></div><p class=3D"mt-2 text-[12px] leading-5 text-zinc-500">R=
+equest composto exige orquestra=C3=A7=C3=A3o paralela.</p><div class=3D"mt-=
+4 space-y-1.5"><div class=3D"flex gap-2 text-[11px] mono text-zinc-400"><sp=
+an class=3D"text-zinc-600">1.</span><span class=3D"">Router top-2 &gt;0.8</=
+span></div><div class=3D"flex gap-2 text-[11px] mono text-zinc-400"><span c=
+lass=3D"text-zinc-600">2.</span><span class=3D"">Load html-artifact + xlsx-=
+report</span></div><div class=3D"flex gap-2 text-[11px] mono text-zinc-400"=
+><span class=3D"text-zinc-600">3.</span><span class=3D"">Sub-agents via A2A=
+</span></div><div class=3D"flex gap-2 text-[11px] mono text-zinc-400"><span=
+ class=3D"text-zinc-600">4.</span><span class=3D"text-zinc-200">Merge outpu=
+ts</span></div></div><div class=3D"mt-4 text-[10px] mono text-blue-300/70">=
+=E2=86=B3 Exemplo deste artefato: html-artifact + xlsx-report via A2A</div>=
+</div><div class=3D"rounded-[16px] border border-[#e5e7eb] bg-[#f8fafc] p-5=
+ flex flex-col"><div class=3D"flex items-center justify-between"><span clas=
+s=3D"text-[10px] mono tracking-widest text-[#64748b]">PATH C</span><span cl=
+ass=3D"text-[10px] mono px-2 py-0.5 rounded bg-[#f1f5f9] border border-[#e5=
+e7eb] text-[#475569]">~20-60s</span></div><div class=3D"mt-3 flex items-cen=
+ter gap-2"><h3 class=3D"text-[16px] font-semibold text-[#000000]">Deep Rese=
+arch</h3><span class=3D"text-[10px] mono px-2 py-0.5 rounded border bg-[#f1=
+f5f9] border-[#e5e7eb] text-[#475569]">loop iterativo</span></div><p class=
+=3D"mt-2 text-[12px] leading-5 text-[#64748b]">Pergunta aberta, necessita b=
+usca, s=C3=ADntese e verifica=C3=A7=C3=A3o.</p><div class=3D"mt-4 space-y-1=
+.5"><div class=3D"flex gap-2 text-[11px] mono text-[#475569]"><span class=
+=3D"text-[#94a3b8]">1.</span><span class=3D"">Plan =E2=86=92 Search =E2=86=
+=92 Read =E2=86=92 Reflect</span></div><div class=3D"flex gap-2 text-[11px]=
+ mono text-[#475569]"><span class=3D"text-[#94a3b8]">2.</span><span class=
+=3D"">Loop at=C3=A9 coverage &gt; threshold</span></div><div class=3D"flex =
+gap-2 text-[11px] mono text-[#475569]"><span class=3D"text-[#94a3b8]">3.</s=
+pan><span class=3D"">Critic agent valida</span></div><div class=3D"flex gap=
+-2 text-[11px] mono text-[#475569]"><span class=3D"text-[#94a3b8]">4.</span=
+><span class=3D"text-[#0f172a] font-medium">Final synthesis</span></div></d=
+iv></div></div></section><section class=3D"mt-16 rounded-[20px] border bord=
+er-[#e5e7eb] bg-white p-6 md:p-8 shadow-sm"><h2 class=3D"text-[12px] mono t=
+racking-widest text-[#64748b] font-semibold mb-6">05 =E2=80=94 POR QUE SKIL=
+LS S=C3=83O HARD HARNESS</h2><div class=3D"grid md:grid-cols-[1.2fr_0.8fr] =
+gap-8"><div class=3D"space-y-4 text-[14px] leading-[1.6] text-[#1e293b]"><p=
+ class=3D"max-w-[560px]"><span class=3D"text-[#000000] font-semibold">Promp=
+t comum</span> =C3=A9 sugest=C3=A3o. Modelo pode ignorar, resumir ou halluc=
+inar. Skill =C3=A9 <span class=3D"text-[#5b21b6] font-semibold">harness de =
+produ=C3=A7=C3=A3o</span>: c=C3=B3digo + SKILL.md injetado com prioridade m=
+=C3=A1xima no system prompt, com whitelist de tools e schema validado.</p><=
+div class=3D"grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4"><div class=3D"roun=
+ded-xl bg-[#f8fafc] border border-[#e5e7eb] p-3.5"><div class=3D"text-[10px=
+] mono text-[#64748b] font-semibold tracking-widest">SOFT PROMPT</div><div =
+class=3D"text-[12px] text-[#64748b] mt-2 line-through">User: "fa=C3=A7a lan=
+ding page bonita"</div><div class=3D"text-[11px] text-[#94a3b8] mt-2">=E2=
+=86=92 Modelo decide se segue</div></div><div class=3D"rounded-xl bg-[#ede9=
+fe] border border-[#ddd6fe] p-3.5"><div class=3D"text-[10px] mono text-[#5b=
+21b6] font-semibold tracking-widest">HARD HARNESS</div><div class=3D"text-[=
+12px] text-[#000000] mt-2 font-medium">System(high): Use Tailwind, React, v=
+alidate</div><div class=3D"text-[11px] text-[#5b21b6] mt-2">=E2=86=92 Model=
+o N=C3=83O pode ignorar</div></div></div></div><div class=3D"space-y-3"><di=
+v class=3D"rounded-xl bg-[#f8fafc] border border-[#e5e7eb] p-4 mono text-[1=
+1px] leading-[1.7]"><div class=3D"text-[#94a3b8] mb-2">// lifecycle real</d=
+iv><div class=3D"text-[#0f172a]">1. <span class=3D"text-[#1e40af] font-semi=
+bold">scan</span> /skills/**/manifest.yaml</div><div class=3D"text-[#0f172a=
+]">2. <span class=3D"text-[#1e40af] font-semibold">embed</span> user query =
+vs skill desc</div><div class=3D"text-[#0f172a]">3. <span class=3D"text-[#1=
+66534] font-semibold">load_skill()</span> inject SKILL.md</div><div class=
+=3D"text-[#0f172a]">4. <span class=3D"text-[#5b21b6] font-semibold">MCP</sp=
+an> list_tools =E2=86=92 context</div><div class=3D"text-[#0f172a]">5. LLM =
+loop: <span class=3D"text-[#000000] font-semibold">reason =E2=86=92 tool =
+=E2=86=92 observe</span></div><div class=3D"text-[#0f172a]">6. <span class=
+=3D"text-[#9d174d] font-semibold">A2A</span> delegate para sub-agents</div>=
+<div class=3D"text-[#0f172a]">7. <span class=3D"text-[#000000] font-semibol=
+d">harness</span> validate + render preview</div></div><div class=3D"flex f=
+lex-wrap gap-2 mono text-[10px]"><span class=3D"px-2.5 py-1 rounded-full bg=
+-[#f1f5f9] border border-[#e5e7eb] text-[#475569]">isolation per skill</spa=
+n><span class=3D"px-2.5 py-1 rounded-full bg-[#f1f5f9] border border-[#e5e7=
+eb] text-[#475569]">no prompt injection</span><span class=3D"px-2.5 py-1 ro=
+unded-full bg-[#f1f5f9] border border-[#e5e7eb] text-[#475569]">typed outpu=
+ts</span></div></div></div><div class=3D"mt-8 pt-6 border-t border-[#e5e7eb=
+] flex flex-col md:flex-row items-start md:items-center justify-between gap=
+-3 mono text-[11px] text-[#64748b]"><span class=3D"text-[#1e293b]">Model =
+=3D c=C3=A9rebro que raciocina =E2=80=A2 Skill =3D m=C3=A3os que executam =
+=E2=80=A2 Agent =3D c=C3=A9rebro + m=C3=A3os em loop</span><span class=3D"t=
+ext-[#94a3b8]">Built for Meta AI =E2=80=A2 Light Theme =E2=80=A2 React + Me=
+rmaid + Tailwind =E2=80=A2 #fafafa</span></div></section><div class=3D"h-10=
+"></div></main></div></div>
+ =20
+ =20
+ =20
+ =20
+
+</body></html>
+------MultipartBoundary--fFu9wJYZRmtKnuxPfj1HmRLYEUBo8kDRGXq1lYP7Q8----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-3d7d5de5-b913-440c-b7e1-abb757ad4113@mhtml.blink
+
+@charset "utf-8";
+
+@font-face { font-family: Optimistic; font-style: normal; font-weight: 400 =
+600; font-display: swap; src: url("/fonts/OptimisticAI_VF_Optimized.woff2")=
+ format("woff2"); }
+
+@font-face { font-family: "Optimistic Mono"; font-style: normal; font-weigh=
+t: 400; font-display: swap; src: url("/fonts/OptimisticMono_W_TextRegular.w=
+off2") format("woff2"); }
+
+:where(html) { font-family: Optimistic, system-ui, sans-serif; }
+
+:where(code, pre, kbd, samp) { font-family: "Optimistic Mono", ui-monospace=
+, monospace; }
+
+* { font-family: Inter, system-ui, sans-serif; }
+
+.mono { font-family: "JetBrains Mono", monospace; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+
+::-webkit-scrollbar-thumb { background: rgb(229, 231, 235); border-radius: =
+99px; }
+
+::-webkit-scrollbar-thumb:hover { background: rgb(209, 213, 219); }
+
+.mermaid svg { width: 100% !important; height: auto !important; max-width: =
+none !important; }
+
+.mermaid { width: 100%; display: flex; justify-content: center; }
+
+*, ::after, ::before { --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; =
+--tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; -=
+-tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: =
+; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-=
+from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ;=
+ --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-s=
+pacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-widt=
+h: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5);=
+ --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shad=
+ow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness=
+: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --=
+tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw=
+-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: =
+; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity=
+: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; -=
+-tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; }
+
+::backdrop { --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-trans=
+late-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y=
+: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pin=
+ch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-posit=
+ion: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordi=
+nal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; =
+--tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --=
+tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,.5); --tw-ring=
+-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0=
+000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-c=
+ontrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturat=
+e: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-=
+brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-bac=
+kdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-b=
+ackdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contai=
+n-layout: ; --tw-contain-paint: ; --tw-contain-style: ; }
+
+*, ::after, ::before { box-sizing: border-box; border: 0px solid rgb(229, 2=
+31, 235); }
+
+::after, ::before { --tw-content: ""; }
+
+:host, html { line-height: 1.5; text-size-adjust: 100%; tab-size: 4; font-f=
+amily: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI=
+ Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-feature-settings: norm=
+al; font-variation-settings: normal; -webkit-tap-highlight-color: transpare=
+nt; }
+
+body { line-height: inherit; }
+
+hr { height: 0px; color: inherit; border-top-width: 1px; }
+
+abbr:where([title]) { text-decoration: underline dotted; }
+
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+
+a { color: inherit; text-decoration: inherit; }
+
+b, strong { font-weight: bolder; }
+
+code, kbd, pre, samp { font-family: ui-monospace, SFMono-Regular, Menlo, Mo=
+naco, Consolas, "Liberation Mono", "Courier New", monospace; font-feature-s=
+ettings: normal; font-variation-settings: normal; font-size: 1em; }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-ali=
+gn: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+table { text-indent: 0px; border-color: inherit; border-collapse: collapse;=
+ }
+
+button, input, optgroup, select, textarea { font-family: inherit; font-feat=
+ure-settings: inherit; font-variation-settings: inherit; font-size: 100%; f=
+ont-weight: inherit; line-height: inherit; letter-spacing: inherit; color: =
+inherit; margin: 0px; padding: 0px; }
+
+button, select { text-transform: none; }
+
+button, input:where([type=3D"button"]), input:where([type=3D"reset"]), inpu=
+t:where([type=3D"submit"]) { appearance: button; background-color: transpar=
+ent; background-image: none; }
+
+progress { vertical-align: baseline; }
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button { height: auto; }
+
+[type=3D"search"] { appearance: textfield; outline-offset: -2px; }
+
+::-webkit-search-decoration { appearance: none; }
+
+::-webkit-file-upload-button { appearance: button; font: inherit; }
+
+summary { display: list-item; }
+
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre { margin: 0p=
+x; }
+
+fieldset { margin: 0px; }
+
+fieldset, legend { padding: 0px; }
+
+menu, ol, ul { list-style: none; margin: 0px; padding: 0px; }
+
+dialog { padding: 0px; }
+
+textarea { resize: vertical; }
+
+input::placeholder, textarea::placeholder { opacity: 1; color: rgb(156, 163=
+, 175); }
+
+[role=3D"button"], button { cursor: pointer; }
+
+:disabled { cursor: default; }
+
+audio, canvas, embed, iframe, img, object, svg, video { display: block; ver=
+tical-align: middle; }
+
+img, video { max-width: 100%; height: auto; }
+
+[hidden]:where(:not([hidden=3D"until-found"])) { display: none; }
+
+.fixed { position: fixed; }
+
+.absolute { position: absolute; }
+
+.relative { position: relative; }
+
+.sticky { position: sticky; }
+
+.inset-0 { inset: 0px; }
+
+.bottom-\[24px\] { bottom: 24px; }
+
+.bottom-\[28px\] { bottom: 28px; }
+
+.left-\[33px\] { left: 33px; }
+
+.top-0 { top: 0px; }
+
+.top-2 { top: 0.5rem; }
+
+.top-\[24px\] { top: 24px; }
+
+.top-\[28px\] { top: 28px; }
+
+.z-40 { z-index: 40; }
+
+.z-\[100\] { z-index: 100; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+
+.mb-2 { margin-bottom: 0.5rem; }
+
+.mb-4 { margin-bottom: 1rem; }
+
+.mb-5 { margin-bottom: 1.25rem; }
+
+.mb-6 { margin-bottom: 1.5rem; }
+
+.ml-1 { margin-left: 0.25rem; }
+
+.ml-3 { margin-left: 0.75rem; }
+
+.ml-auto { margin-left: auto; }
+
+.mt-1 { margin-top: 0.25rem; }
+
+.mt-12 { margin-top: 3rem; }
+
+.mt-16 { margin-top: 4rem; }
+
+.mt-2 { margin-top: 0.5rem; }
+
+.mt-2\.5 { margin-top: 0.625rem; }
+
+.mt-3 { margin-top: 0.75rem; }
+
+.mt-4 { margin-top: 1rem; }
+
+.mt-5 { margin-top: 1.25rem; }
+
+.mt-6 { margin-top: 1.5rem; }
+
+.mt-8 { margin-top: 2rem; }
+
+.mt-\[2px\] { margin-top: 2px; }
+
+.flex { display: flex; }
+
+.inline-flex { display: inline-flex; }
+
+.grid { display: grid; }
+
+.hidden { display: none; }
+
+.h-1\.5 { height: 0.375rem; }
+
+.h-10 { height: 2.5rem; }
+
+.h-2 { height: 0.5rem; }
+
+.h-3 { height: 0.75rem; }
+
+.h-7 { height: 1.75rem; }
+
+.h-8 { height: 2rem; }
+
+.h-9 { height: 2.25rem; }
+
+.h-\[64px\] { height: 64px; }
+
+.h-\[68px\] { height: 68px; }
+
+.h-px { height: 1px; }
+
+.min-h-\[420px\] { min-height: 420px; }
+
+.min-h-\[900px\] { min-height: 900px; }
+
+.min-h-screen { min-height: 100vh; }
+
+.w-1\.5 { width: 0.375rem; }
+
+.w-2 { width: 0.5rem; }
+
+.w-3 { width: 0.75rem; }
+
+.w-7 { width: 1.75rem; }
+
+.w-8 { width: 2rem; }
+
+.w-9 { width: 2.25rem; }
+
+.w-full { width: 100%; }
+
+.w-px { width: 1px; }
+
+.min-w-0 { min-width: 0px; }
+
+.min-w-\[42px\] { min-width: 42px; }
+
+.min-w-\[48px\] { min-width: 48px; }
+
+.min-w-\[900px\] { min-width: 900px; }
+
+.max-w-3xl { max-width: 48rem; }
+
+.max-w-\[1120px\] { max-width: 1120px; }
+
+.max-w-\[1320px\] { max-width: 1320px; }
+
+.max-w-\[560px\] { max-width: 560px; }
+
+.max-w-\[620px\] { max-width: 620px; }
+
+.max-w-\[640px\] { max-width: 640px; }
+
+.flex-1 { flex: 1 1 0%; }
+
+.shrink-0 { flex-shrink: 0; }
+
+.transform { transform: translate(var(--tw-translate-x),var(--tw-translate-=
+y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)=
+) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+
+@keyframes pulse {=20
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse { animation: 2s cubic-bezier(0.4, 0, 0.6, 1) 0s infinite nor=
+mal none running pulse; }
+
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0px, 1fr)); }
+
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+
+.grid-cols-\[100px_1fr_1fr\] { grid-template-columns: 100px 1fr 1fr; }
+
+.flex-col { flex-direction: column; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.items-start { align-items: flex-start; }
+
+.items-center { align-items: center; }
+
+.items-baseline { align-items: baseline; }
+
+.justify-center { justify-content: center; }
+
+.justify-between { justify-content: space-between; }
+
+.gap-1 { gap: 0.25rem; }
+
+.gap-1\.5 { gap: 0.375rem; }
+
+.gap-2 { gap: 0.5rem; }
+
+.gap-2\.5 { gap: 0.625rem; }
+
+.gap-3 { gap: 0.75rem; }
+
+.gap-3\.5 { gap: 0.875rem; }
+
+.gap-4 { gap: 1rem; }
+
+.gap-6 { gap: 1.5rem; }
+
+.gap-8 { gap: 2rem; }
+
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; =
+margin-top: calc(.375rem*(1 - var(--tw-space-y-reverse))); margin-bottom: c=
+alc(.375rem*var(--tw-space-y-reverse)); }
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; mar=
+gin-top: calc(.75rem*(1 - var(--tw-space-y-reverse))); margin-bottom: calc(=
+.75rem*var(--tw-space-y-reverse)); }
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; mar=
+gin-top: calc(1rem*(1 - var(--tw-space-y-reverse))); margin-bottom: calc(1r=
+em*var(--tw-space-y-reverse)); }
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) { --tw-space-y-reverse: 0; mar=
+gin-top: calc(1.25rem*(1 - var(--tw-space-y-reverse))); margin-bottom: calc=
+(1.25rem*var(--tw-space-y-reverse)); }
+
+.overflow-auto { overflow: auto; }
+
+.overflow-hidden { overflow: hidden; }
+
+.overflow-x-auto { overflow-x: auto; }
+
+.overflow-y-auto { overflow-y: auto; }
+
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap;=
+ }
+
+.rounded { border-radius: 0.25rem; }
+
+.rounded-\[10px\] { border-radius: 10px; }
+
+.rounded-\[14px\] { border-radius: 14px; }
+
+.rounded-\[16px\] { border-radius: 16px; }
+
+.rounded-\[20px\] { border-radius: 20px; }
+
+.rounded-\[9px\] { border-radius: 9px; }
+
+.rounded-full { border-radius: 9999px; }
+
+.rounded-lg { border-radius: 0.5rem; }
+
+.rounded-xl { border-radius: 0.75rem; }
+
+.border { border-width: 1px; }
+
+.border-b { border-bottom-width: 1px; }
+
+.border-l { border-left-width: 1px; }
+
+.border-r { border-right-width: 1px; }
+
+.border-t { border-top-width: 1px; }
+
+.border-\[\#1e293b\] { --tw-border-opacity: 1; border-color: rgb(30 41 59/v=
+ar(--tw-border-opacity,1)); }
+
+.border-\[\#bbf7d0\] { --tw-border-opacity: 1; border-color: rgb(187 247 20=
+8/var(--tw-border-opacity,1)); }
+
+.border-\[\#bfdbfe\] { --tw-border-opacity: 1; border-color: rgb(191 219 25=
+4/var(--tw-border-opacity,1)); }
+
+.border-\[\#bfdbfe\]\/60 { border-color: rgba(191, 219, 254, 0.6); }
+
+.border-\[\#ddd6fe\] { --tw-border-opacity: 1; border-color: rgb(221 214 25=
+4/var(--tw-border-opacity,1)); }
+
+.border-\[\#e2e8f0\] { --tw-border-opacity: 1; border-color: rgb(226 232 24=
+0/var(--tw-border-opacity,1)); }
+
+.border-\[\#e5e7eb\] { --tw-border-opacity: 1; border-color: rgb(229 231 23=
+5/var(--tw-border-opacity,1)); }
+
+.border-\[\#e5e7eb\]\/60 { border-color: rgba(229, 231, 235, 0.6); }
+
+.border-\[\#e5e7eb\]\/70 { border-color: rgba(229, 231, 235, 0.7); }
+
+.border-\[\#fbcfe8\] { --tw-border-opacity: 1; border-color: rgb(251 207 23=
+2/var(--tw-border-opacity,1)); }
+
+.border-\[\#fde68a\] { --tw-border-opacity: 1; border-color: rgb(253 230 13=
+8/var(--tw-border-opacity,1)); }
+
+.border-\[\#fed7aa\] { --tw-border-opacity: 1; border-color: rgb(254 215 17=
+0/var(--tw-border-opacity,1)); }
+
+.border-amber-200 { --tw-border-opacity: 1; border-color: rgb(253 230 138/v=
+ar(--tw-border-opacity,1)); }
+
+.border-blue-500\/20 { border-color: rgba(59, 130, 246, 0.2); }
+
+.border-blue-500\/30 { border-color: rgba(59, 130, 246, 0.3); }
+
+.border-emerald-500\/20 { border-color: rgba(16, 185, 129, 0.2); }
+
+.border-emerald-500\/30 { border-color: rgba(16, 185, 129, 0.3); }
+
+.border-emerald-800\/50 { border-color: rgba(6, 95, 70, 0.5); }
+
+.border-orange-500\/20 { border-color: rgba(249, 115, 22, 0.2); }
+
+.border-orange-500\/30 { border-color: rgba(249, 115, 22, 0.3); }
+
+.border-violet-500\/20 { border-color: rgba(139, 92, 246, 0.2); }
+
+.border-violet-500\/30 { border-color: rgba(139, 92, 246, 0.3); }
+
+.border-violet-800\/40 { border-color: rgba(91, 33, 182, 0.4); }
+
+.border-violet-800\/50 { border-color: rgba(91, 33, 182, 0.5); }
+
+.border-white\/20 { border-color: rgba(255, 255, 255, 0.2); }
+
+.border-zinc-700 { --tw-border-opacity: 1; border-color: rgb(63 63 70/var(-=
+-tw-border-opacity,1)); }
+
+.border-zinc-800 { --tw-border-opacity: 1; border-color: rgb(39 39 42/var(-=
+-tw-border-opacity,1)); }
+
+.border-zinc-800\/60 { border-color: rgba(39, 39, 42, 0.6); }
+
+.border-zinc-800\/80 { border-color: rgba(39, 39, 42, 0.8); }
+
+.bg-\[\#08080c\] { --tw-bg-opacity: 1; background-color: rgb(8 8 12/var(--t=
+w-bg-opacity,1)); }
+
+.bg-\[\#08080c\]\/80 { background-color: rgba(8, 8, 12, 0.8); }
+
+.bg-\[\#0a0a0f\] { --tw-bg-opacity: 1; background-color: rgb(10 10 15/var(-=
+-tw-bg-opacity,1)); }
+
+.bg-\[\#0e0e13\] { --tw-bg-opacity: 1; background-color: rgb(14 14 19/var(-=
+-tw-bg-opacity,1)); }
+
+.bg-\[\#0f172a\] { --tw-bg-opacity: 1; background-color: rgb(15 23 42/var(-=
+-tw-bg-opacity,1)); }
+
+.bg-\[\#16a34a\] { --tw-bg-opacity: 1; background-color: rgb(22 163 74/var(=
+--tw-bg-opacity,1)); }
+
+.bg-\[\#dbeafe\] { --tw-bg-opacity: 1; background-color: rgb(219 234 254/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#dcfce7\] { --tw-bg-opacity: 1; background-color: rgb(220 252 231/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#e5e7eb\] { --tw-bg-opacity: 1; background-color: rgb(229 231 235/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#ec4899\] { --tw-bg-opacity: 1; background-color: rgb(236 72 153/var=
+(--tw-bg-opacity,1)); }
+
+.bg-\[\#ede9fe\] { --tw-bg-opacity: 1; background-color: rgb(237 233 254/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#f1f5f9\] { --tw-bg-opacity: 1; background-color: rgb(241 245 249/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#f8fafc\] { --tw-bg-opacity: 1; background-color: rgb(248 250 252/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#f8fafc\]\/60 { background-color: rgba(248, 250, 252, 0.6); }
+
+.bg-\[\#fafafa\] { --tw-bg-opacity: 1; background-color: rgb(250 250 250/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#fce7f3\] { --tw-bg-opacity: 1; background-color: rgb(252 231 243/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-\[\#ffedd5\] { --tw-bg-opacity: 1; background-color: rgb(255 237 213/va=
+r(--tw-bg-opacity,1)); }
+
+.bg-amber-50 { --tw-bg-opacity: 1; background-color: rgb(255 251 235/var(--=
+tw-bg-opacity,1)); }
+
+.bg-amber-500 { --tw-bg-opacity: 1; background-color: rgb(245 158 11/var(--=
+tw-bg-opacity,1)); }
+
+.bg-black\/40 { background-color: rgba(0, 0, 0, 0.4); }
+
+.bg-black\/50 { background-color: rgba(0, 0, 0, 0.5); }
+
+.bg-blue-500\/10 { background-color: rgba(59, 130, 246, 0.1); }
+
+.bg-blue-500\/15 { background-color: rgba(59, 130, 246, 0.15); }
+
+.bg-blue-500\/\[0\.06\] { background-color: rgba(59, 130, 246, 0.06); }
+
+.bg-emerald-400 { --tw-bg-opacity: 1; background-color: rgb(52 211 153/var(=
+--tw-bg-opacity,1)); }
+
+.bg-emerald-500 { --tw-bg-opacity: 1; background-color: rgb(16 185 129/var(=
+--tw-bg-opacity,1)); }
+
+.bg-emerald-500\/10 { background-color: rgba(16, 185, 129, 0.1); }
+
+.bg-emerald-500\/15 { background-color: rgba(16, 185, 129, 0.15); }
+
+.bg-emerald-500\/\[0\.06\] { background-color: rgba(16, 185, 129, 0.06); }
+
+.bg-emerald-950\/30 { background-color: rgba(2, 44, 34, 0.3); }
+
+.bg-fuchsia-400 { --tw-bg-opacity: 1; background-color: rgb(232 121 249/var=
+(--tw-bg-opacity,1)); }
+
+.bg-fuchsia-500 { --tw-bg-opacity: 1; background-color: rgb(217 70 239/var(=
+--tw-bg-opacity,1)); }
+
+.bg-green-400 { --tw-bg-opacity: 1; background-color: rgb(74 222 128/var(--=
+tw-bg-opacity,1)); }
+
+.bg-green-500\/80 { background-color: rgba(34, 197, 94, 0.8); }
+
+.bg-orange-400 { --tw-bg-opacity: 1; background-color: rgb(251 146 60/var(-=
+-tw-bg-opacity,1)); }
+
+.bg-orange-500\/10 { background-color: rgba(249, 115, 22, 0.1); }
+
+.bg-orange-500\/15 { background-color: rgba(249, 115, 22, 0.15); }
+
+.bg-orange-500\/20 { background-color: rgba(249, 115, 22, 0.2); }
+
+.bg-orange-500\/\[0\.07\] { background-color: rgba(249, 115, 22, 0.07); }
+
+.bg-red-400 { --tw-bg-opacity: 1; background-color: rgb(248 113 113/var(--t=
+w-bg-opacity,1)); }
+
+.bg-red-500\/80 { background-color: rgba(239, 68, 68, 0.8); }
+
+.bg-sky-400 { --tw-bg-opacity: 1; background-color: rgb(56 189 248/var(--tw=
+-bg-opacity,1)); }
+
+.bg-sky-500 { --tw-bg-opacity: 1; background-color: rgb(14 165 233/var(--tw=
+-bg-opacity,1)); }
+
+.bg-transparent { background-color: transparent; }
+
+.bg-violet-400 { --tw-bg-opacity: 1; background-color: rgb(167 139 250/var(=
+--tw-bg-opacity,1)); }
+
+.bg-violet-500 { --tw-bg-opacity: 1; background-color: rgb(139 92 246/var(-=
+-tw-bg-opacity,1)); }
+
+.bg-violet-500\/10 { background-color: rgba(139, 92, 246, 0.1); }
+
+.bg-violet-500\/15 { background-color: rgba(139, 92, 246, 0.15); }
+
+.bg-violet-500\/20 { background-color: rgba(139, 92, 246, 0.2); }
+
+.bg-violet-500\/\[0\.04\] { background-color: rgba(139, 92, 246, 0.04); }
+
+.bg-violet-500\/\[0\.07\] { background-color: rgba(139, 92, 246, 0.07); }
+
+.bg-violet-950\/30 { background-color: rgba(46, 16, 101, 0.3); }
+
+.bg-violet-950\/40 { background-color: rgba(46, 16, 101, 0.4); }
+
+.bg-white { --tw-bg-opacity: 1; background-color: rgb(255 255 255/var(--tw-=
+bg-opacity,1)); }
+
+.bg-white\/70 { background-color: rgba(255, 255, 255, 0.7); }
+
+.bg-white\/80 { background-color: rgba(255, 255, 255, 0.8); }
+
+.bg-white\/85 { background-color: rgba(255, 255, 255, 0.85); }
+
+.bg-white\/\[0\.04\] { background-color: rgba(255, 255, 255, 0.04); }
+
+.bg-yellow-400 { --tw-bg-opacity: 1; background-color: rgb(250 204 21/var(-=
+-tw-bg-opacity,1)); }
+
+.bg-yellow-500\/80 { background-color: rgba(234, 179, 8, 0.8); }
+
+.bg-zinc-800 { --tw-bg-opacity: 1; background-color: rgb(39 39 42/var(--tw-=
+bg-opacity,1)); }
+
+.bg-zinc-800\/40 { background-color: rgba(39, 39, 42, 0.4); }
+
+.bg-zinc-900 { --tw-bg-opacity: 1; background-color: rgb(24 24 27/var(--tw-=
+bg-opacity,1)); }
+
+.bg-zinc-900\/20 { background-color: rgba(24, 24, 27, 0.2); }
+
+.bg-zinc-900\/30 { background-color: rgba(24, 24, 27, 0.3); }
+
+.bg-zinc-900\/40 { background-color: rgba(24, 24, 27, 0.4); }
+
+.bg-zinc-900\/50 { background-color: rgba(24, 24, 27, 0.5); }
+
+.bg-gradient-to-b { background-image: linear-gradient(to bottom,var(--tw-gr=
+adient-stops)); }
+
+.bg-gradient-to-br { background-image: linear-gradient(to bottom right,var(=
+--tw-gradient-stops)); }
+
+.from-\[\#dbeafe\] { --tw-gradient-from: #dbeafe var(--tw-gradient-from-pos=
+ition); --tw-gradient-to: rgba(219,234,254,0) var(--tw-gradient-to-position=
+); --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to); }
+
+.from-violet-950\/30 { --tw-gradient-from: rgba(46,16,101,.3) var(--tw-grad=
+ient-from-position); --tw-gradient-to: rgba(46,16,101,0) var(--tw-gradient-=
+to-position); --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradien=
+t-to); }
+
+.from-zinc-700 { --tw-gradient-from: #3f3f46 var(--tw-gradient-from-positio=
+n); --tw-gradient-to: rgba(63,63,70,0) var(--tw-gradient-to-position); --tw=
+-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to); }
+
+.via-\[\#ede9fe\] { --tw-gradient-to: rgba(237,233,254,0) var(--tw-gradient=
+-to-position); --tw-gradient-stops: var(--tw-gradient-from),#ede9fe var(--t=
+w-gradient-via-position),var(--tw-gradient-to); }
+
+.via-violet-500\/50 { --tw-gradient-to: rgba(139,92,246,0) var(--tw-gradien=
+t-to-position); --tw-gradient-stops: var(--tw-gradient-from),rgba(139,92,24=
+6,.5) var(--tw-gradient-via-position),var(--tw-gradient-to); }
+
+.via-white { --tw-gradient-to: hsla(0,0%,100%,0) var(--tw-gradient-to-posit=
+ion); --tw-gradient-stops: var(--tw-gradient-from),#fff var(--tw-gradient-v=
+ia-position),var(--tw-gradient-to); }
+
+.via-zinc-900 { --tw-gradient-to: rgba(24,24,27,0) var(--tw-gradient-to-pos=
+ition); --tw-gradient-stops: var(--tw-gradient-from),#18181b var(--tw-gradi=
+ent-via-position),var(--tw-gradient-to); }
+
+.to-\[\#dcfce7\] { --tw-gradient-to: #dcfce7 var(--tw-gradient-to-position)=
+; }
+
+.to-\[\#fce7f3\] { --tw-gradient-to: #fce7f3 var(--tw-gradient-to-position)=
+; }
+
+.to-emerald-500\/50 { --tw-gradient-to: rgba(16,185,129,.5) var(--tw-gradie=
+nt-to-position); }
+
+.to-orange-950\/20 { --tw-gradient-to: rgba(67,20,7,.2) var(--tw-gradient-t=
+o-position); }
+
+.p-1 { padding: 0.25rem; }
+
+.p-2\.5 { padding: 0.625rem; }
+
+.p-3 { padding: 0.75rem; }
+
+.p-3\.5 { padding: 0.875rem; }
+
+.p-4 { padding: 1rem; }
+
+.p-5 { padding: 1.25rem; }
+
+.p-6 { padding: 1.5rem; }
+
+.p-8 { padding: 2rem; }
+
+.p-\[32px\] { padding: 32px; }
+
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+
+.px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+
+.px-3\.5 { padding-left: 0.875rem; padding-right: 0.875rem; }
+
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+
+.px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+
+.py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+
+.py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+
+.py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+
+.pl-5 { padding-left: 1.25rem; }
+
+.pt-6 { padding-top: 1.5rem; }
+
+.text-center { text-align: center; }
+
+.text-\[10px\] { font-size: 10px; }
+
+.text-\[11px\] { font-size: 11px; }
+
+.text-\[12px\] { font-size: 12px; }
+
+.text-\[13px\] { font-size: 13px; }
+
+.text-\[14px\] { font-size: 14px; }
+
+.text-\[15px\] { font-size: 15px; }
+
+.text-\[16px\] { font-size: 16px; }
+
+.text-\[32px\] { font-size: 32px; }
+
+.font-\[600\] { font-weight: 600; }
+
+.font-\[700\] { font-weight: 700; }
+
+.font-\[800\] { font-weight: 800; }
+
+.font-bold { font-weight: 700; }
+
+.font-medium { font-weight: 500; }
+
+.font-semibold { font-weight: 600; }
+
+.leading-4 { line-height: 1rem; }
+
+.leading-5 { line-height: 1.25rem; }
+
+.leading-6 { line-height: 1.5rem; }
+
+.leading-\[0\.95\] { line-height: 0.95; }
+
+.leading-\[1\.5\] { line-height: 1.5; }
+
+.leading-\[1\.6\] { line-height: 1.6; }
+
+.leading-\[1\.7\] { line-height: 1.7; }
+
+.leading-none { line-height: 1; }
+
+.tracking-\[-0\.03em\] { letter-spacing: -0.03em; }
+
+.tracking-tight { letter-spacing: -0.025em; }
+
+.tracking-wide { letter-spacing: 0.025em; }
+
+.tracking-widest { letter-spacing: 0.1em; }
+
+.text-\[\#000000\] { --tw-text-opacity: 1; color: rgb(0 0 0/var(--tw-text-o=
+pacity,1)); }
+
+.text-\[\#0f172a\] { --tw-text-opacity: 1; color: rgb(15 23 42/var(--tw-tex=
+t-opacity,1)); }
+
+.text-\[\#111827\] { --tw-text-opacity: 1; color: rgb(17 24 39/var(--tw-tex=
+t-opacity,1)); }
+
+.text-\[\#166534\] { --tw-text-opacity: 1; color: rgb(22 101 52/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#1e293b\] { --tw-text-opacity: 1; color: rgb(30 41 59/var(--tw-tex=
+t-opacity,1)); }
+
+.text-\[\#1e40af\] { --tw-text-opacity: 1; color: rgb(30 64 175/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#475569\] { --tw-text-opacity: 1; color: rgb(71 85 105/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#5b21b6\] { --tw-text-opacity: 1; color: rgb(91 33 182/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#64748b\] { --tw-text-opacity: 1; color: rgb(100 116 139/var(--tw-=
+text-opacity,1)); }
+
+.text-\[\#7c2d12\] { --tw-text-opacity: 1; color: rgb(124 45 18/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#92400e\] { --tw-text-opacity: 1; color: rgb(146 64 14/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#94a3b8\] { --tw-text-opacity: 1; color: rgb(148 163 184/var(--tw-=
+text-opacity,1)); }
+
+.text-\[\#9a3412\] { --tw-text-opacity: 1; color: rgb(154 52 18/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#9ca3af\] { --tw-text-opacity: 1; color: rgb(156 163 175/var(--tw-=
+text-opacity,1)); }
+
+.text-\[\#9d174d\] { --tw-text-opacity: 1; color: rgb(157 23 77/var(--tw-te=
+xt-opacity,1)); }
+
+.text-\[\#e2e8f0\] { --tw-text-opacity: 1; color: rgb(226 232 240/var(--tw-=
+text-opacity,1)); }
+
+.text-amber-200\/70 { color: rgba(253, 230, 139, 0.7); }
+
+.text-black { --tw-text-opacity: 1; color: rgb(0 0 0/var(--tw-text-opacity,=
+1)); }
+
+.text-blue-200 { --tw-text-opacity: 1; color: rgb(191 219 254/var(--tw-text=
+-opacity,1)); }
+
+.text-blue-300 { --tw-text-opacity: 1; color: rgb(147 197 253/var(--tw-text=
+-opacity,1)); }
+
+.text-blue-300\/70 { color: rgba(147, 197, 253, 0.7); }
+
+.text-emerald-200\/60 { color: rgba(167, 243, 208, 0.6); }
+
+.text-emerald-300 { --tw-text-opacity: 1; color: rgb(110 231 183/var(--tw-t=
+ext-opacity,1)); }
+
+.text-orange-200 { --tw-text-opacity: 1; color: rgb(254 215 170/var(--tw-te=
+xt-opacity,1)); }
+
+.text-orange-300 { --tw-text-opacity: 1; color: rgb(253 186 116/var(--tw-te=
+xt-opacity,1)); }
+
+.text-violet-100 { --tw-text-opacity: 1; color: rgb(237 233 254/var(--tw-te=
+xt-opacity,1)); }
+
+.text-violet-200 { --tw-text-opacity: 1; color: rgb(221 214 254/var(--tw-te=
+xt-opacity,1)); }
+
+.text-violet-200\/70 { color: rgba(221, 214, 254, 0.7); }
+
+.text-violet-300 { --tw-text-opacity: 1; color: rgb(196 181 253/var(--tw-te=
+xt-opacity,1)); }
+
+.text-violet-300\/70 { color: rgba(196, 181, 253, 0.7); }
+
+.text-violet-400 { --tw-text-opacity: 1; color: rgb(167 139 250/var(--tw-te=
+xt-opacity,1)); }
+
+.text-white { --tw-text-opacity: 1; color: rgb(255 255 255/var(--tw-text-op=
+acity,1)); }
+
+.text-zinc-100 { --tw-text-opacity: 1; color: rgb(244 244 245/var(--tw-text=
+-opacity,1)); }
+
+.text-zinc-200 { --tw-text-opacity: 1; color: rgb(228 228 231/var(--tw-text=
+-opacity,1)); }
+
+.text-zinc-300 { --tw-text-opacity: 1; color: rgb(212 212 216/var(--tw-text=
+-opacity,1)); }
+
+.text-zinc-400 { --tw-text-opacity: 1; color: rgb(161 161 170/var(--tw-text=
+-opacity,1)); }
+
+.text-zinc-500 { --tw-text-opacity: 1; color: rgb(113 113 122/var(--tw-text=
+-opacity,1)); }
+
+.text-zinc-600 { --tw-text-opacity: 1; color: rgb(82 82 91/var(--tw-text-op=
+acity,1)); }
+
+.line-through { text-decoration-line: line-through; }
+
+.opacity-60 { opacity: 0.6; }
+
+.opacity-80 { opacity: 0.8; }
+
+.shadow-sm { --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05); --tw-shadow-colored:=
+ 0 1px 2px 0 var(--tw-shadow-color); box-shadow: var(--tw-ring-offset-shado=
+w,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow); }
+
+.backdrop-blur-xl { --tw-backdrop-blur: blur(24px); backdrop-filter: var(--=
+tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast)=
+ var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdr=
+op-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-=
+backdrop-sepia); }
+
+.transition { transition-property: color, background-color, border-color, t=
+ext-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,=
+ backdrop-filter; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);=
+ transition-duration: 0.15s; }
+
+#root, body, html { min-height: 100%; }
+
+body { margin: 0px; font-family: Inter, ui-sans-serif, system-ui, -apple-sy=
+stem, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+[role=3D"button"]:not([aria-disabled=3D"true"]), button:not(:disabled), lab=
+el[for], select:not(:disabled), summary { cursor: pointer; }
+
+.selection\:bg-violet-200 ::selection { --tw-bg-opacity: 1; background-colo=
+r: rgb(221 214 254/var(--tw-bg-opacity,1)); }
+
+.selection\:bg-violet-500\/30 ::selection { background-color: rgba(139, 92,=
+ 246, 0.3); }
+
+.selection\:bg-violet-200::selection { --tw-bg-opacity: 1; background-color=
+: rgb(221 214 254/var(--tw-bg-opacity,1)); }
+
+.selection\:bg-violet-500\/30::selection { background-color: rgba(139, 92, =
+246, 0.3); }
+
+.last\:border-0:last-child { border-width: 0px; }
+
+.hover\:bg-\[\#e2e8f0\]:hover { --tw-bg-opacity: 1; background-color: rgb(2=
+26 232 240/var(--tw-bg-opacity,1)); }
+
+.hover\:bg-black:hover { --tw-bg-opacity: 1; background-color: rgb(0 0 0/va=
+r(--tw-bg-opacity,1)); }
+
+.hover\:text-\[\#0f172a\]:hover { --tw-text-opacity: 1; color: rgb(15 23 42=
+/var(--tw-text-opacity,1)); }
+
+.hover\:text-zinc-300:hover { --tw-text-opacity: 1; color: rgb(212 212 216/=
+var(--tw-text-opacity,1)); }
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+}
+
+@media (min-width: 768px) {
+  .md\:left-\[41px\] { left: 41px; }
+  .md\:left-\[46px\] { left: 46px; }
+  .md\:mt-16 { margin-top: 4rem; }
+  .md\:block { display: block; }
+  .md\:inline { display: inline; }
+  .md\:flex { display: flex; }
+  .md\:hidden { display: none; }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0px, 1fr)); }
+  .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0px, 1fr)); }
+  .md\:grid-cols-\[1\.2fr_0\.8fr\] { grid-template-columns: 1.2fr 0.8fr; }
+  .md\:flex-row { flex-direction: row; }
+  .md\:items-center { align-items: center; }
+  .md\:p-4 { padding: 1rem; }
+  .md\:p-5 { padding: 1.25rem; }
+  .md\:p-8 { padding: 2rem; }
+  .md\:p-\[32px\] { padding: 32px; }
+  .md\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .md\:py-14 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .md\:pl-5 { padding-left: 1.25rem; }
+  .md\:text-\[44px\] { font-size: 44px; }
+  .md\:text-\[48px\] { font-size: 48px; }
+}
+------MultipartBoundary--fFu9wJYZRmtKnuxPfj1HmRLYEUBo8kDRGXq1lYP7Q8------
